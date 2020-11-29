@@ -548,28 +548,28 @@ main .clients .clients-images-container .clients-image {
   opacity: 0.75;
 }
 main .clients .clients-images-container #salvationArmy {
-  background-image: url("/img/salvationarmy.png");
+  background-image: url("../../img/salvationarmy.png");
 }
 main .clients .clients-images-container #spotless {
-  background-image: url("/img/spotless.png");
+  background-image: url("../../img/spotless.png");
 }
 main .clients .clients-images-container #adelaideCityCouncil {
-  background-image: url("/img/cityofadelaide.png");
+  background-image: url("../../img/cityofadelaide.png");
 }
 main .clients .clients-images-container #salisburyCityCouncil {
-  background-image: url("/img/cityofsalisbury.png");
+  background-image: url("../../img/cityofsalisbury.png");
 }
 main .clients .clients-images-container #universityOfAdelaide {
-  background-image: url("/img/uniofadelaide.png");
+  background-image: url("../../img/uniofadelaide.png");
 }
 main .clients .clients-images-container #heathgate {
-  background-image: url("/img/heathgate.png");
+  background-image: url("../../img/heathgate.png");
 }
 main .clients .clients-images-container #raywhite {
-  background-image: url("/img/raywhite.png");
+  background-image: url("../../img/raywhite.png");
 }
 main .clients .clients-images-container #allwater {
-  background-image: url("/img/allwater.png");
+  background-image: url("../../img/allwater.png");
 }
 main .oss-promise .oss-promise-title {
   margin: 2rem auto;
