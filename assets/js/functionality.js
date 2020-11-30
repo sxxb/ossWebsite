@@ -34,6 +34,7 @@ $(document).ready(function() {
       if($(window).width() < 600) {
         event.preventDefault();
         $(`header-nav-main-link-top-link`).siblings(`.header-nav-main-link-dropdown-list`).slideToggle(250);
+      }
     });
 });
 
