@@ -33,7 +33,10 @@ $(document).ready(function() {
     $(`.header-nav-main-link-top-link`).click(function() {
       if($(window).width() < 600) {
         event.preventDefault();
-        $(`.header-nav-main-link-top-link`).siblings(`.header-nav-main-link-dropdown-list`).slideToggle(250);
+        $(`.header-nav-main-link-top-link`).siblings(`.header-nav-main-link-dropdown-list`).
+        .not($(this).next(`.header-nav-main-link-dropdown-list`)
+        .slideUp(500);
+        $(this).next(`.header-nav-main-link-dropdown-list`).slideToggle(500);
       }
     });
 });
