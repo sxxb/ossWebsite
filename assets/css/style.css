@@ -45,7 +45,9 @@ header .header-content .header-content-logo {
 header .header-content .header-content-logo img {
   width: 4rem;
   height: 4rem;
-  outline: 1px solid red;
+  background-image: url("../../img/placeholder.png");
+  background-position: center;
+  background-size: cover;
   margin-right: 1rem;
 }
 header .header-content .header-content-logo h1 {
@@ -470,7 +472,9 @@ main .body-content-right .body-content-img-container {
   width: 90%;
   max-width: 40rem;
   height: 5rem;
-  outline: 1px solid red;
+  background-image: url("../../img/placeholder.png");
+  background-position: center;
+  background-size: cover;
 }
 main .services-content-left .services-content-text-container, main .services-content-left .body-content-text-container,
 main .services-content-right .services-content-text-container,

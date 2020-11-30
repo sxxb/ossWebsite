@@ -19,9 +19,7 @@ $theme-shadow-2: 0 0 5vh rgba(0, 0, 0, 0.25), 0 5px 15px rgba(33, 33, 33, 0.25);
   margin: 0;
   padding: 0;
   border: 0;
-  // transition:0.2s ease;
   text-decoration: none;
-  // outline:1px solid red;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -54,7 +52,9 @@ header {
       img {
         width: 4rem;
         height: 4rem;
-        outline: 1px solid red;
+        background-image:url('../../img/placeholder.png');
+        background-position: center;
+        background-size:cover;
         margin-right: 1rem;
       }
       h1 {
@@ -481,7 +481,9 @@ main {
       width: 90%;
       max-width: 40rem;
       height: 5rem; //tbc
-      outline:1px solid red;
+      background-image:url('../../img/placeholder.png');
+      background-position: center;
+      background-size:cover;
     }
     .services-content-text-container, .body-content-text-container {
       width: 90%;
@@ -556,7 +558,6 @@ main {
         background-repeat: no-repeat;
         filter: grayscale(1);
         opacity: 0.75;
-        // outline:1px solid red;
       }
       #salvationArmy {
         background-image: url('../../img/salvationarmy.png');
