@@ -60,6 +60,7 @@ header {
       h1 {
         color: $theme-colour-main;
         line-height: 1.05em;
+        font-size:1.6rem;
       }
     }
     .header-content-other {
@@ -405,8 +406,8 @@ main {
         }
       }
       ul.contact-list-container {
-        width:24rem;
-        padding-left:4rem;
+        width:max-content;
+
         margin:auto;
         li {
           list-style-type: none;

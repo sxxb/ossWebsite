@@ -53,6 +53,7 @@ header .header-content .header-content-logo img {
 header .header-content .header-content-logo h1 {
   color: #3663ff;
   line-height: 1.05em;
+  font-size: 1.6rem;
 }
 header .header-content .header-content-other {
   display: none;
@@ -392,8 +393,7 @@ main .services-content .services-content-copy ul.service-dot-points li::before, 
   transform: rotateZ(12deg);
 }
 main .services-content .services-content-copy ul.contact-list-container, main .services-content .body-content-copy ul.contact-list-container, main .body-content .services-content-copy ul.contact-list-container, main .body-content .body-content-copy ul.contact-list-container {
-  width: 24rem;
-  padding-left: 4rem;
+  width: max-content;
   margin: auto;
 }
 main .services-content .services-content-copy ul.contact-list-container li, main .services-content .body-content-copy ul.contact-list-container li, main .body-content .services-content-copy ul.contact-list-container li, main .body-content .body-content-copy ul.contact-list-container li {
