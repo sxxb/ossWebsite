@@ -25,9 +25,8 @@ html {
 header {
   position: sticky;
   top: 0;
-  background: white;
+  background: #31aa62;
   box-shadow: 0 1px 0 rgba(128, 128, 128, 0.05), 0px 1rem 3rem rgba(0, 0, 0, 0.025);
-  opacity: 0.95;
   z-index: 1;
 }
 header .header-content {
@@ -51,7 +50,7 @@ header .header-content .header-content-logo img {
   margin-right: 1rem;
 }
 header .header-content .header-content-logo h1 {
-  color: #3663ff;
+  color: #f4fbf7;
   line-height: 1.05em;
   font-size: 1.6rem;
 }
@@ -64,16 +63,16 @@ header .header-content .header-content-menu-trigger {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 2px solid #3663ff;
+  border: 2px solid #f4fbf7;
   border-radius: 0.25rem;
 }
 header .header-content .header-content-menu-trigger a {
   padding: 0.6rem 0.65rem 0.4rem;
   font-size: 1.5rem;
-  color: #3663ff;
+  color: #f4fbf7;
 }
 header .header-content .header-content-menu-trigger a:hover, header .header-content .header-content-menu-trigger a:visited {
-  color: #3663ff;
+  color: #f4fbf7;
 }
 header > .header-nav {
   transition: 0.5s ease;
@@ -84,8 +83,7 @@ header .header-nav {
   left: 2.5vw;
   width: 95vw;
   height: 95vh;
-  background: #edf5ff;
-  border-radius: 0.5rem;
+  background: #f4f6fb;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
@@ -95,7 +93,7 @@ header .header-nav {
   display: flex;
 }
 header .header-nav .header-nav-mobile-header {
-  color: #384c73;
+  color: #31aa62;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -112,7 +110,7 @@ header .header-nav .header-nav-mobile-header i {
   padding-right: 0.5rem;
 }
 header .header-nav .header-nav-mobile-header i:hover {
-  color: #85a2d6;
+  color: #89d2a6;
 }
 header .header-nav .header-nav-main-links {
   display: flex;
@@ -126,16 +124,16 @@ header .header-nav .header-nav-main-links > li {
   list-style-type: none;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #3663ff;
+  color: #31aa62;
   margin-top: 0.75rem;
 }
 header .header-nav .header-nav-main-links > li a,
 header .header-nav .header-nav-main-links > li a:visited {
-  color: #3663ff;
+  color: #31aa62;
 }
 header .header-nav .header-nav-main-links > li:hover,
 header .header-nav .header-nav-main-links > li a:hover {
-  color: #9ec1ff;
+  color: #89d2a6;
 }
 header .header-nav .header-nav-main-links > li ul {
   display: none;
@@ -160,17 +158,21 @@ header .header-nav .header-nav-main-links > li ul > div li {
 }
 header .header-nav .header-nav-main-links > li ul > div li a {
   width: 100%;
-  color: #85a2d6;
+  color: #89d2a6;
   font-weight: bold;
   transition: 0.2s ease;
 }
-header .header-nav .header-nav-main-links > li ul > div li a:hover, header .header-nav .header-nav-main-links > li ul > div li a:hover > * {
-  color: #384c73;
+header .header-nav .header-nav-main-links > li ul > div li a:hover, header .header-nav .header-nav-main-links > li ul > div li a:hover > i {
+  color: #31aa62;
+  transition: 0.2s ease;
+}
+header .header-nav .header-nav-main-links > li ul > div li a:hover > span {
+  color: #293856;
   transition: 0.2s ease;
 }
 header .header-nav .header-nav-main-links > li ul > div li a i {
   font-size: 2rem;
-  color: #85a2d6;
+  color: #89d2a6;
 }
 header .header-nav .header-nav-main-links > li ul > div li a span {
   display: flex;
@@ -181,7 +183,7 @@ header .header-nav .header-nav-main-links > li ul > div li a span {
   height: 40px;
   font-weight: 400;
   font-size: 0.8rem;
-  color: #384c73;
+  color: #293856;
 }
 header .header-nav .header-nav-sub-links {
   width: 100%;
@@ -192,10 +194,10 @@ header .header-nav .header-nav-sub-links {
 header .header-nav .header-nav-sub-links a {
   font-size: 1rem;
   font-weight: bold;
-  color: #6d85b0;
+  color: #31aa62;
 }
 header .header-nav .header-nav-sub-links a:hover {
-  color: #384c73;
+  color: #89d2a6;
 }
 header .header-nav-open {
   opacity: 1;
@@ -236,25 +238,25 @@ main .hero .hero-image {
 }
 main .hero .hero-image h2 {
   color: white;
-  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.125), 0 0 5vh rgba(0, 0, 0, 0.25), 0 5px 15px rgba(33, 33, 33, 0.25);
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13), 0 0 5vh rgba(0, 0, 0, 0.25), 0 5px 15px rgba(33, 33, 33, 0.25);
   font-size: 3rem;
-  background-color: rgba(26, 30, 38, 0.9);
+  background-color: rgba(29, 38, 32, 0.9);
   padding: 0.1rem 0.4em 0.2rem;
 }
 main .hero #HomePageHero {
-  background-color: #3663ff;
+  background-color: #31aa62;
   background-blend-mode: luminosity;
 }
 main .hero #TestAndTagHero {
-  background-color: #6d85b0;
+  background-color: #73ab89;
   background-blend-mode: luminosity;
 }
 main .hero #DataAndElectricalHero {
-  background-color: #85a2d6;
+  background-color: #89d2a6;
   background-blend-mode: luminosity;
 }
 main .hero #OtherServicesHero {
-  background-color: #9ec1ff;
+  background-color: #b9e4ca;
   background-blend-mode: luminosity;
 }
 main .hero .hero-text {
@@ -265,7 +267,7 @@ main .hero .hero-text {
 main .hero .hero-text p {
   font-size: 1.15rem;
   line-height: 1.6em;
-  color: #384c73;
+  color: #293856;
 }
 main .services .services-title {
   margin: 2rem auto;
@@ -273,8 +275,11 @@ main .services .services-title {
 main .services .services-title h2 {
   font-size: 2.5rem;
   font-style: italic;
-  color: #1a1e26;
+  background: #31aa62;
+  color: white;
+  padding: 0.5rem 2rem;
   text-align: center;
+  box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .services .services-list {
   width: 100%;
@@ -299,28 +304,28 @@ main .services .services-list ul li a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  color: #384c73;
+  color: #293856;
   width: 100%;
   transition: 0.2s ease;
   font-size: 0.75rem;
 }
 main .services .services-list ul li a:visited {
-  color: #384c73;
+  color: #293856;
 }
 main .services .services-list ul li a:hover {
-  color: #0081ff;
+  color: #31aa62;
 }
 main .services .services-list ul li a:hover > i {
-  background-color: #0081ff;
+  background-color: #31aa62;
 }
 main .services .services-list ul li a i {
   display: flex;
   justify-content: center;
   text-align: center;
-  color: #3663ff;
+  color: #31aa62;
 }
 main .services .services-list ul li a i.fa-inverse {
-  color: #edf5ff;
+  color: #f4fbf7;
 }
 main .services .services-list ul li a span.fa-stack {
   margin-right: 2.5%;
@@ -338,12 +343,15 @@ main .services-content .services-content-title, main .services-content .body-con
 main .services-content .services-content-title h2, main .services-content .body-content-title h2, main .body-content .services-content-title h2, main .body-content .body-content-title h2 {
   font-size: 2.5rem;
   font-style: italic;
-  color: #1a1e26;
+  background: #31aa62;
+  color: white;
+  padding: 0.5rem 2rem;
   text-align: center;
+  box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .services-content .services-content-title h3, main .services-content .body-content-title h3, main .body-content .services-content-title h3, main .body-content .body-content-title h3 {
   font-size: 1.5rem;
-  color: #1a1e26;
+  color: #1b1f27;
 }
 main .services-content .services-content-copy, main .services-content .body-content-copy, main .body-content .services-content-copy, main .body-content .body-content-copy {
   width: 90%;
@@ -352,16 +360,16 @@ main .services-content .services-content-copy, main .services-content .body-cont
 main .services-content .services-content-copy p, main .services-content .body-content-copy p, main .body-content .services-content-copy p, main .body-content .body-content-copy p {
   line-height: 1.6em;
   margin-bottom: 1rem;
-  color: #384c73;
+  color: #293856;
 }
 main .services-content .services-content-copy a, main .services-content .body-content-copy a, main .body-content .services-content-copy a, main .body-content .body-content-copy a {
-  color: #6d85b0;
+  color: #31aa62;
 }
 main .services-content .services-content-copy a i, main .services-content .body-content-copy a i, main .body-content .services-content-copy a i, main .body-content .body-content-copy a i {
-  color: #85a2d6;
+  color: #89d2a6;
 }
 main .services-content .services-content-copy a:hover, main .services-content .services-content-copy a:hover *, main .services-content .body-content-copy a:hover, main .services-content .body-content-copy a:hover *, main .body-content .services-content-copy a:hover, main .body-content .services-content-copy a:hover *, main .body-content .body-content-copy a:hover, main .body-content .body-content-copy a:hover * {
-  color: #0081ff;
+  color: #40bf73;
 }
 main .services-content .services-content-copy ul.service-dot-points, main .services-content .body-content-copy ul.service-dot-points, main .body-content .services-content-copy ul.service-dot-points, main .body-content .body-content-copy ul.service-dot-points {
   padding-left: 1rem;
@@ -370,14 +378,14 @@ main .services-content .services-content-copy ul.service-dot-points, main .servi
 main .services-content .services-content-copy ul.service-dot-points li, main .services-content .body-content-copy ul.service-dot-points li, main .body-content .services-content-copy ul.service-dot-points li, main .body-content .body-content-copy ul.service-dot-points li {
   list-style-type: none;
   padding-top: 1rem;
-  color: #384c73;
+  color: #293856;
   font-size: 1rem;
 }
 main .services-content .services-content-copy ul.service-dot-points li::before, main .services-content .body-content-copy ul.service-dot-points li::before, main .body-content .services-content-copy ul.service-dot-points li::before, main .body-content .body-content-copy ul.service-dot-points li::before {
   display: inline-block;
   content: "";
-  background-color: #3663ff;
-  color: #edf5ff;
+  background-color: #31aa62;
+  color: #f4fbf7;
   font-family: "Font Awesome 5 Free";
   font-size: 1rem;
   margin-right: 1rem;
@@ -399,14 +407,14 @@ main .services-content .services-content-copy ul.contact-list-container li, main
   margin: 0.5rem 0;
 }
 main .services-content .services-content-copy ul.contact-list-container li a, main .services-content .body-content-copy ul.contact-list-container li a, main .body-content .services-content-copy ul.contact-list-container li a, main .body-content .body-content-copy ul.contact-list-container li a {
-  color: #1a1e26;
+  color: #293856;
 }
 main .services-content .services-content-copy ul.contact-list-container li a:hover, main .services-content .services-content-copy ul.contact-list-container li a:hover i, main .services-content .body-content-copy ul.contact-list-container li a:hover, main .services-content .body-content-copy ul.contact-list-container li a:hover i, main .body-content .services-content-copy ul.contact-list-container li a:hover, main .body-content .services-content-copy ul.contact-list-container li a:hover i, main .body-content .body-content-copy ul.contact-list-container li a:hover, main .body-content .body-content-copy ul.contact-list-container li a:hover i {
-  color: #3663ff;
+  color: #31aa62;
 }
 main .services-content .services-content-copy ul.contact-list-container li i, main .services-content .body-content-copy ul.contact-list-container li i, main .body-content .services-content-copy ul.contact-list-container li i, main .body-content .body-content-copy ul.contact-list-container li i {
   margin-right: 1rem;
-  color: #384c73;
+  color: #293856;
 }
 main .services-content .services-content-copy .faq-item, main .services-content .body-content-copy .faq-item, main .body-content .services-content-copy .faq-item, main .body-content .body-content-copy .faq-item {
   margin-bottom: 3rem;
@@ -415,18 +423,18 @@ main .services-content .services-content-copy .faq-item:first-of-type, main .ser
   margin-top: 1rem;
 }
 main .services-content .services-content-copy .faq-item h4, main .services-content .body-content-copy .faq-item h4, main .body-content .services-content-copy .faq-item h4, main .body-content .body-content-copy .faq-item h4 {
-  color: #1a1e26;
+  color: #293856;
   font-size: 1.5rem;
 }
 main .services-content .services-content-copy .faq-item p, main .services-content .body-content-copy .faq-item p, main .body-content .services-content-copy .faq-item p, main .body-content .body-content-copy .faq-item p {
-  color: #6d85b0;
+  color: #6d84b0;
   margin-top: 0.5rem;
 }
 main .services-content .services-content-copy .faq-item ol, main .services-content .body-content-copy .faq-item ol, main .body-content .services-content-copy .faq-item ol, main .body-content .body-content-copy .faq-item ol {
   padding-left: 2rem;
 }
 main .services-content .services-content-copy .faq-item ol li, main .services-content .body-content-copy .faq-item ol li, main .body-content .services-content-copy .faq-item ol li, main .body-content .body-content-copy .faq-item ol li {
-  color: #6d85b0;
+  color: #6d84b0;
   padding: 0.25rem 0 0.25rem 1rem;
 }
 main .services-content .services-content-copy h3, main .services-content .body-content-copy h3, main .body-content .services-content-copy h3, main .body-content .body-content-copy h3 {
@@ -442,16 +450,16 @@ main .services-content .services-content-button button, main .services-content .
   align-items: center;
   padding: 1rem 4rem;
   font-size: 1.2rem;
-  background: #3663ff;
-  color: #edf5ff;
+  background: #31aa62;
+  color: #f4fbf7;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: bold;
   transition: 0.2s ease;
   cursor: pointer;
-  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.125);
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .services-content .services-content-button button:hover, main .services-content .body-content-button button:hover, main .body-content .services-content-button button:hover, main .body-content .body-content-button button:hover {
-  background: #0081ff;
+  background: #89d2a6;
 }
 main .services-content-left,
 main .services-content-right,
@@ -489,8 +497,11 @@ main .why-tnt .why-tnt-title {
 main .why-tnt .why-tnt-title h2 {
   font-size: 2.5rem;
   font-style: italic;
-  color: #1a1e26;
+  background: #31aa62;
+  color: white;
+  padding: 0.5rem 2rem;
   text-align: center;
+  box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .why-tnt .why-tnt-copy {
   width: 90%;
@@ -499,7 +510,7 @@ main .why-tnt .why-tnt-copy {
 main .why-tnt .why-tnt-copy p {
   line-height: 1.6em;
   margin-bottom: 1rem;
-  color: #384c73;
+  color: #2d533c;
 }
 main .why-tnt .why-tnt-button {
   margin: 2rem auto;
@@ -511,16 +522,16 @@ main .why-tnt .why-tnt-button button {
   align-items: center;
   padding: 1rem 4rem;
   font-size: 1.2rem;
-  background: #3663ff;
-  color: #edf5ff;
+  background: #31aa62;
+  color: #f4fbf7;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: bold;
   transition: 0.2s ease;
   cursor: pointer;
-  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.125);
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .why-tnt .why-tnt-button button:hover {
-  background: #0081ff;
+  background: #40bf73;
 }
 main .clients .clients-title {
   margin: 2rem auto;
@@ -528,8 +539,11 @@ main .clients .clients-title {
 main .clients .clients-title h2 {
   font-size: 2.5rem;
   font-style: italic;
-  color: #1a1e26;
+  background: #31aa62;
+  color: white;
+  padding: 0.5rem 2rem;
   text-align: center;
+  box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .clients .clients-images-container {
   display: flex;
@@ -578,8 +592,11 @@ main .oss-promise .oss-promise-title {
 main .oss-promise .oss-promise-title h2 {
   font-size: 2.5rem;
   font-style: italic;
-  color: #1a1e26;
+  background: #31aa62;
+  color: white;
+  padding: 0.5rem 2rem;
   text-align: center;
+  box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .oss-promise .oss-promise-copy {
   width: 90%;
@@ -588,7 +605,7 @@ main .oss-promise .oss-promise-copy {
 main .oss-promise .oss-promise-copy p {
   line-height: 1.6em;
   margin-bottom: 1rem;
-  color: #384c73;
+  color: #293856;
 }
 main .quote .quote-title {
   margin: 2rem auto;
@@ -596,8 +613,11 @@ main .quote .quote-title {
 main .quote .quote-title h2 {
   font-size: 2.5rem;
   font-style: italic;
-  color: #1a1e26;
+  background: #31aa62;
+  color: white;
+  padding: 0.5rem 2rem;
   text-align: center;
+  box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .quote .quote-copy p {
   margin: 0 auto 2rem auto;
@@ -637,8 +657,8 @@ main .quote .quote-form form div fieldset > span {
 main .quote .quote-form form div fieldset input,
 main .quote .quote-form form div fieldset select,
 main .quote .quote-form form div fieldset textarea {
-  background: #e2e7f0;
-  color: #1a1e26;
+  background: #f4f6fb;
+  color: #1b1f27;
   font-family: "Fira Sans Condensed", sans-serif;
   padding: 0.75rem;
   font-size: 1rem;
@@ -646,20 +666,20 @@ main .quote .quote-form form div fieldset textarea {
 main .quote .quote-form form div fieldset input::placeholder,
 main .quote .quote-form form div fieldset select::placeholder,
 main .quote .quote-form form div fieldset textarea::placeholder {
-  color: #6d85b0;
+  color: #6d84b0;
   opacity: 1;
 }
 main .quote .quote-form form div fieldset option {
-  background: #edf5ff;
-  color: #384c73;
+  background: #f4f6fb;
+  color: #6d84b0;
   font-family: "Fira Sans Condensed", sans-serif;
 }
 main .quote .quote-form form div fieldset select:required:invalid {
-  color: #6d85b0;
+  color: #6d84b0;
   opacity: 1;
 }
 main .quote .quote-form form div fieldset option[value=""][disabled] {
-  color: #6d85b0;
+  color: #6d84b0;
 }
 main .quote .quote-form form div fieldset .captcha-container {
   display: flex;
@@ -669,7 +689,7 @@ main .quote .quote-form form div fieldset .captcha-container {
 }
 main .quote .quote-form form div fieldset .captcha-container .captcha {
   width: 47.5%;
-  border: 1px solid #85a2d6;
+  border: 1px solid #31aa62;
   padding: 0.4rem;
   font-size: 1.5rem;
   text-align: center;
@@ -684,16 +704,16 @@ main .quote .quote-form form div input[type=submit] {
   align-items: center;
   padding: 1rem 4rem;
   font-size: 1.2rem;
-  background: #3663ff;
-  color: #edf5ff;
+  background: #31aa62;
+  color: #f4fbf7;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: bold;
   transition: 0.2s ease;
   cursor: pointer;
-  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.125);
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .quote .quote-form form div input[type=submit]:hover {
-  background: #0081ff;
+  background: #40bf73;
 }
 main .services,
 main .why-tnt,
@@ -705,8 +725,8 @@ main .other {
 }
 
 footer {
-  background-color: #1a1e26;
-  color: #6d85b0;
+  background-color: #1b1f27;
+  color: #89d2a6;
 }
 footer * {
   transition: 0.2s ease;
@@ -726,13 +746,14 @@ footer .footer-content .footer-content-contact {
 }
 footer .footer-content .footer-content-contact h4 {
   font-size: 2.5rem;
-  color: #9ec1ff;
+  color: #40bf73;
   line-height: 1em;
 }
 footer .footer-content .footer-content-contact h5 {
   font-size: 1.5rem;
   line-height: 1.5em;
   font-style: italic;
+  color: #89d2a6;
 }
 footer .footer-content .footer-content-contact ul {
   margin-top: 1rem;
@@ -740,15 +761,16 @@ footer .footer-content .footer-content-contact ul {
 footer .footer-content .footer-content-contact ul li {
   list-style-type: none;
   padding-bottom: 0.5rem;
+  color: #73ab89;
 }
 footer .footer-content .footer-content-contact ul li:last-of-type {
   padding-bottom: 0;
 }
 footer .footer-content .footer-content-contact ul li a {
-  color: #6d85b0;
+  color: #73ab89;
 }
 footer .footer-content .footer-content-contact ul li a:hover {
-  color: #bdcff2;
+  color: #e2eee7;
 }
 footer .footer-content .footer-content-contact ul li i {
   margin-right: 0.5rem;
@@ -766,7 +788,7 @@ footer .footer-copyright h6 {
   font-size: 1rem;
   font-weight: 400;
   text-align: center;
-  color: #6d85b0;
+  color: #73ab89;
 }
 
 @media only screen and (min-width: 600px) {
@@ -790,7 +812,7 @@ footer .footer-copyright h6 {
     align-items: center;
   }
   header .header-content .header-content-logo h1 {
-    color: #3663ff;
+    color: white;
     line-height: 1.05em;
   }
   header .header-content .header-content-other {
@@ -801,8 +823,8 @@ footer .footer-copyright h6 {
   header .header-content .header-content-other .header-content-search form {
     display: flex;
     flex-direction: row;
-    background: #e2e7f0;
-    color: #1a1e26;
+    background: #b9e4ca;
+    color: #293856;
     margin-top: 0.3rem;
     padding-right: 0.25rem;
   }
@@ -816,7 +838,7 @@ footer .footer-copyright h6 {
     width: 10%;
     background: none;
     padding: 0rem;
-    color: #85a2d6;
+    color: #31aa62;
   }
   header .header-content .header-content-other .header-content-contact {
     text-align: center;
@@ -826,12 +848,12 @@ footer .footer-copyright h6 {
     font-size: 1.1rem;
     line-height: 1rem;
     font-style: italic;
-    color: #85a2d6;
+    color: #b9e4ca;
   }
   header .header-content .header-content-other .header-content-contact h3, header .header-content .header-content-other .header-content-contact h3 a {
     font-size: 1.75rem;
     line-height: 1.5rem;
-    color: #3663ff;
+    color: white;
   }
   header .header-content .header-content-menu-trigger {
     display: none;
@@ -843,7 +865,7 @@ footer .footer-copyright h6 {
     left: 0;
     height: auto;
     width: 100%;
-    background: white;
+    background: #1b1f27;
     padding: 0;
     overflow: visible;
     box-shadow: none;
@@ -868,29 +890,29 @@ footer .footer-copyright h6 {
     height: 2.5rem;
     font-size: 1rem;
     font-weight: 400;
-    color: #1a1e26;
+    color: #e2eee7;
     display: flex;
     align-items: stretch;
     justify-content: center;
   }
   header .header-nav .header-nav-main-links > li:visited {
-    color: #1a1e26;
+    color: #e2eee7;
   }
   header .header-nav .header-nav-main-links > li:hover {
-    color: #1a1e26;
-    background: #edf5ff;
+    color: #e2eee7;
+    background: #2d533c;
   }
   header .header-nav .header-nav-main-links > li > a,
 header .header-nav .header-nav-main-links > li > a:visited,
 header .header-nav .header-nav-main-links > li > a:hover {
-    color: #1a1e26;
+    color: #e2eee7;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
   header .header-nav .header-nav-main-links > li i {
-    color: #0081ff;
+    color: #31aa62;
     padding-left: 0.25rem;
   }
   header .header-nav .header-nav-main-links > li ul {
@@ -899,8 +921,8 @@ header .header-nav .header-nav-main-links > li > a:hover {
     top: 100%;
     left: 0%;
     width: 100%;
-    box-shadow: 0 5px 5px rgba(33, 33, 33, 0.125);
-    background: #1a1e26;
+    box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+    background: #1b1f27;
     padding: 0.5rem 0;
     transition: 0.5s ease;
   }
@@ -928,21 +950,19 @@ header .header-nav .header-nav-main-links > li > a:hover {
     text-align: left;
     align-items: center;
     justify-content: flex-start;
-    color: #9ec1ff;
     font-weight: bold;
     font-size: 1.25rem;
   }
   header .header-nav .header-nav-main-links > li ul > div li a:hover, header .header-nav .header-nav-main-links > li ul > div li a:visited:hover {
-    color: #e2e7f0;
     justify-content: flex-start;
   }
   header .header-nav .header-nav-main-links > li ul > div li a:hover > *, header .header-nav .header-nav-main-links > li ul > div li a:visited:hover > * {
-    color: #e2e7f0;
+    color: #e2eee7;
   }
   header .header-nav .header-nav-main-links > li ul > div li a i, header .header-nav .header-nav-main-links > li ul > div li a:visited i {
     font-size: 2rem;
-    color: #85a2d6;
-    margin-right: 0.3rem;
+    color: #89d2a6;
+    margin-right: 0.5rem;
     text-align: center;
     width: 3rem;
   }
@@ -955,7 +975,15 @@ header .header-nav .header-nav-main-links > li > a:hover {
     padding-top: 0.15rem;
     font-weight: 400;
     font-size: 0.9rem;
-    color: #9ec1ff;
+    color: #b9e4ca;
+  }
+  header .header-nav .header-nav-main-links > li ul > div li a:hover > i, header .header-nav .header-nav-main-links > li ul > div li a:visited:hover > i {
+    color: #e2eee7;
+    transition: 0.2s ease;
+  }
+  header .header-nav .header-nav-main-links > li ul > div li a:hover > span, header .header-nav .header-nav-main-links > li ul > div li a:visited:hover > span {
+    color: #e2eee7;
+    transition: 0.2s ease;
   }
   header .header-nav .header-nav-main-links > li:hover > ul,
 header .header-nav .header-nav-main-links > li ul:hover {
@@ -1004,13 +1032,13 @@ header .header-nav .header-nav-main-links > li ul:hover {
     justify-content: space-between;
   }
   footer .footer-content .footer-content-links a {
-    color: #6d85b0;
+    color: #73ab89;
     font-weight: bold;
     font-size: 1.2rem;
     display: flex;
   }
   footer .footer-content .footer-content-links a:hover {
-    color: #9ec1ff;
+    color: #b9e4ca;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -1103,11 +1131,6 @@ header .header-nav .header-nav-main-links > li ul:hover {
   main .quote .quote-title {
     margin: 2rem auto;
   }
-  main .quote .quote-title h2 {
-    font-size: 2.5rem;
-    font-style: italic;
-    color: #1a1e26;
-  }
   main .quote .quote-form {
     width: 90%;
     margin: auto;
@@ -1146,18 +1169,18 @@ main .quote .quote-form form div fieldset textarea {
   main .quote .quote-form form div fieldset input::placeholder,
 main .quote .quote-form form div fieldset select::placeholder,
 main .quote .quote-form form div fieldset textarea::placeholder {
-    color: #6d85b0;
+    color: #6d84b0;
     opacity: 1;
   }
   main .quote .quote-form form div fieldset textarea {
     height: 13.7rem;
   }
   main .quote .quote-form form div fieldset select:required:invalid {
-    color: #6d85b0;
+    color: #6d84b0;
     opacity: 1;
   }
   main .quote .quote-form form div fieldset option[value=""][disabled] {
-    color: #6d85b0;
+    color: #6d84b0;
   }
   main .quote .quote-form form div fieldset input[type=submit] {
     width: unset;
@@ -1166,16 +1189,16 @@ main .quote .quote-form form div fieldset textarea::placeholder {
     align-items: center;
     padding: 1rem 4rem;
     font-size: 1.2rem;
-    background: #3663ff;
-    color: #edf5ff;
+    background: #31aa62;
+    color: #f4fbf7;
     font-family: "Fira Sans Condensed", sans-serif;
     font-weight: bold;
     transition: 0.2s ease;
     cursor: pointer;
-    text-shadow: 0 5px 5px rgba(33, 33, 33, 0.125);
+    text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
   }
   main .quote .quote-form form div fieldset input[type=submit]:hover {
-    background: #0081ff;
+    background: #40bf73;
   }
   main.home .services,
 main.home .why-tnt,
@@ -1230,12 +1253,13 @@ main.home .other {
     margin-bottom: 2rem;
   }
   footer .footer-content .footer-content-about h4 {
-    color: #9ec1ff;
+    color: #89d2a6;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
   footer .footer-content .footer-content-about p {
     font-size: 0.9rem;
+    color: #73ab89;
   }
   footer .footer-content .footer-content-about form {
     display: flex;
@@ -1244,8 +1268,8 @@ main.home .other {
   }
   footer .footer-content .footer-content-about form input[type=text],
 footer .footer-content .footer-content-about form input[type=email] {
-    background: #384c73;
-    color: #bdcff2;
+    background: #293856;
+    color: #c2f0d4;
     padding: 0.4em 0.6em;
     margin-bottom: 0.5em;
     width: 100%;
@@ -1256,8 +1280,8 @@ footer .footer-content .footer-content-about form input[type=email] {
     padding: 0.4em;
     width: 60%;
     margin: 0.2em auto 0;
-    color: #bdcff2;
-    background: #3663ff;
+    color: #e2eee7;
+    background: #31aa62;
     font-family: "Fira Sans Condensed", sans-serif;
     font-size: 1.2rem;
     line-height: 1em;
@@ -1265,7 +1289,7 @@ footer .footer-content .footer-content-about form input[type=email] {
     cursor: pointer;
   }
   footer .footer-content .footer-content-about form input[type=submit]:hover {
-    background: #0081ff;
+    background: #40bf73;
   }
 }
 @media only screen and (min-width: 1200px) {
