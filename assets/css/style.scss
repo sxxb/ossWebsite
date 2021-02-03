@@ -19,22 +19,9 @@ $theme-colour-2b: hsl(220, 32%, 91%);
 $theme-colour-3b: hsl(220, 67%, 85%);
 $theme-colour-4b: hsl(220, 50%, 81%);
 $theme-colour-5b: hsl(220, 50%, 68%);;
-$theme-colour-6b: hsl(220, 30%, 56%);
+$theme-colour-6b: hsl(220, 20%, 56%);
 $theme-colour-7b: hsl(220, 35%, 25%);
 $theme-colour-8b: hsl(220, 19%, 13%);
-
-
-//new
-// $theme-colour-main: hsl(42, 100%, 61%);
-// $theme-colour-main-2: hsl(42, 100%, 50%);
-// $theme-colour-1: hsl(227, 100%, 97%);
-// $theme-colour-2: hsl(227, 32%, 91%);
-// $theme-colour-3: hsl(42, 67%, 85%);
-// $theme-colour-4: hsl(42, 100%, 50%);
-// $theme-colour-5: hsl(42, 50%, 68%);;
-// $theme-colour-6: hsl(42, 50%, 59%);
-// $theme-colour-7: hsl(220, 35%, 34%);
-// $theme-colour-8: hsl(220, 10%, 13%);
 
 $theme-shadow-1: 0 5px 5px hsla(0, 0%, 12.9%, 0.13);
 $theme-shadow-2: 0 0 5vh hsla(0, 0%, 0%, 0.25), 0 5px 15px hsla(0, 0%, 12.9%, 0.25);
@@ -788,28 +775,28 @@ footer {
       justify-content: space-between;
       h4 {
         font-size: 2.5rem;
-        color: $theme-colour-main-2;
+        color: $theme-colour-main;
         line-height: 1em;
       }
       h5 {
         font-size: 1.5rem;
         line-height: 1.5em;
         font-style: italic;
-        color: $theme-colour-5;
+        color: $theme-colour-6;
       }
       ul {
         margin-top: 1rem;
         li {
           list-style-type: none;
           padding-bottom: 0.5rem;
-          color: $theme-colour-6;
+          color: $theme-colour-6b;
           &:last-of-type {
             padding-bottom: 0;
           }
           a {
-            color: $theme-colour-6;
+            color: $theme-colour-6b;
             &:hover {
-              color: $theme-colour-2;
+              color: $theme-colour-5;
             }
           }
           i {
@@ -828,10 +815,10 @@ footer {
   .footer-copyright {
     padding: 2rem 0;
     h6 {
-      font-size: 1rem;
+      font-size: 0.85rem;
       font-weight: 400;
       text-align: center;
-      color: $theme-colour-6;
+      color: $theme-colour-6b;
     }
   }
 }
@@ -1019,7 +1006,7 @@ footer {
                     padding-top: 0.15rem;
                     font-weight: 400;
                     font-size: 0.9rem;
-                    color: $theme-colour-4;
+                    color: $theme-colour-3;
                     }
                     &:hover > i {
                       color: $theme-colour-2;
@@ -1094,12 +1081,12 @@ footer {
         align-items: flex-start;
         justify-content: space-between;
         a {
-          color: $theme-colour-6;
+          color: $theme-colour-6b;
           font-weight: bold;
           font-size: 1.2rem;
           display: flex;
           &:hover {
-            color: $theme-colour-4;
+            color: $theme-colour-5;
           }
         }
       }
@@ -1382,13 +1369,13 @@ footer {
           margin-bottom: 2rem;
         }
         h4 {
-          color: $theme-colour-5;
+          color: $theme-colour-6;
           font-size: 1.5rem;
           margin-bottom: 0.5rem;
         }
         p {
           font-size: 0.9rem;
-          color:$theme-colour-6;
+          color:$theme-colour-6b;
         }
         form {
           display: flex;
@@ -1397,7 +1384,7 @@ footer {
           input[type="text"],
           input[type="email"] {
             background: $theme-colour-7b;
-            color: $theme-colour-3;
+            color: $theme-colour-3b;
             padding: 0.4em 0.6em;
             margin-bottom: 0.5em;
             width: 100%;

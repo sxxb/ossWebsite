@@ -427,14 +427,14 @@ main .services-content .services-content-copy .faq-item h4, main .services-conte
   font-size: 1.5rem;
 }
 main .services-content .services-content-copy .faq-item p, main .services-content .body-content-copy .faq-item p, main .body-content .services-content-copy .faq-item p, main .body-content .body-content-copy .faq-item p {
-  color: #6d84b0;
+  color: #7887a5;
   margin-top: 0.5rem;
 }
 main .services-content .services-content-copy .faq-item ol, main .services-content .body-content-copy .faq-item ol, main .body-content .services-content-copy .faq-item ol, main .body-content .body-content-copy .faq-item ol {
   padding-left: 2rem;
 }
 main .services-content .services-content-copy .faq-item ol li, main .services-content .body-content-copy .faq-item ol li, main .body-content .services-content-copy .faq-item ol li, main .body-content .body-content-copy .faq-item ol li {
-  color: #6d84b0;
+  color: #7887a5;
   padding: 0.25rem 0 0.25rem 1rem;
 }
 main .services-content .services-content-copy h3, main .services-content .body-content-copy h3, main .body-content .services-content-copy h3, main .body-content .body-content-copy h3 {
@@ -666,20 +666,20 @@ main .quote .quote-form form div fieldset textarea {
 main .quote .quote-form form div fieldset input::placeholder,
 main .quote .quote-form form div fieldset select::placeholder,
 main .quote .quote-form form div fieldset textarea::placeholder {
-  color: #6d84b0;
+  color: #7887a5;
   opacity: 1;
 }
 main .quote .quote-form form div fieldset option {
   background: #f4f6fb;
-  color: #6d84b0;
+  color: #7887a5;
   font-family: "Fira Sans Condensed", sans-serif;
 }
 main .quote .quote-form form div fieldset select:required:invalid {
-  color: #6d84b0;
+  color: #7887a5;
   opacity: 1;
 }
 main .quote .quote-form form div fieldset option[value=""][disabled] {
-  color: #6d84b0;
+  color: #7887a5;
 }
 main .quote .quote-form form div fieldset .captcha-container {
   display: flex;
@@ -746,14 +746,14 @@ footer .footer-content .footer-content-contact {
 }
 footer .footer-content .footer-content-contact h4 {
   font-size: 2.5rem;
-  color: #40bf73;
+  color: #31aa62;
   line-height: 1em;
 }
 footer .footer-content .footer-content-contact h5 {
   font-size: 1.5rem;
   line-height: 1.5em;
   font-style: italic;
-  color: #89d2a6;
+  color: #73ab89;
 }
 footer .footer-content .footer-content-contact ul {
   margin-top: 1rem;
@@ -761,16 +761,16 @@ footer .footer-content .footer-content-contact ul {
 footer .footer-content .footer-content-contact ul li {
   list-style-type: none;
   padding-bottom: 0.5rem;
-  color: #73ab89;
+  color: #7887a5;
 }
 footer .footer-content .footer-content-contact ul li:last-of-type {
   padding-bottom: 0;
 }
 footer .footer-content .footer-content-contact ul li a {
-  color: #73ab89;
+  color: #7887a5;
 }
 footer .footer-content .footer-content-contact ul li a:hover {
-  color: #e2eee7;
+  color: #89d2a6;
 }
 footer .footer-content .footer-content-contact ul li i {
   margin-right: 0.5rem;
@@ -785,10 +785,10 @@ footer .footer-copyright {
   padding: 2rem 0;
 }
 footer .footer-copyright h6 {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 400;
   text-align: center;
-  color: #73ab89;
+  color: #7887a5;
 }
 
 @media only screen and (min-width: 600px) {
@@ -975,7 +975,7 @@ header .header-nav .header-nav-main-links > li > a:hover {
     padding-top: 0.15rem;
     font-weight: 400;
     font-size: 0.9rem;
-    color: #b9e4ca;
+    color: #c2f0d4;
   }
   header .header-nav .header-nav-main-links > li ul > div li a:hover > i, header .header-nav .header-nav-main-links > li ul > div li a:visited:hover > i {
     color: #e2eee7;
@@ -1032,13 +1032,13 @@ header .header-nav .header-nav-main-links > li ul:hover {
     justify-content: space-between;
   }
   footer .footer-content .footer-content-links a {
-    color: #73ab89;
+    color: #7887a5;
     font-weight: bold;
     font-size: 1.2rem;
     display: flex;
   }
   footer .footer-content .footer-content-links a:hover {
-    color: #b9e4ca;
+    color: #89d2a6;
   }
 }
 @media only screen and (min-width: 900px) {
@@ -1169,18 +1169,18 @@ main .quote .quote-form form div fieldset textarea {
   main .quote .quote-form form div fieldset input::placeholder,
 main .quote .quote-form form div fieldset select::placeholder,
 main .quote .quote-form form div fieldset textarea::placeholder {
-    color: #6d84b0;
+    color: #7887a5;
     opacity: 1;
   }
   main .quote .quote-form form div fieldset textarea {
     height: 13.7rem;
   }
   main .quote .quote-form form div fieldset select:required:invalid {
-    color: #6d84b0;
+    color: #7887a5;
     opacity: 1;
   }
   main .quote .quote-form form div fieldset option[value=""][disabled] {
-    color: #6d84b0;
+    color: #7887a5;
   }
   main .quote .quote-form form div fieldset input[type=submit] {
     width: unset;
@@ -1253,13 +1253,13 @@ main.home .other {
     margin-bottom: 2rem;
   }
   footer .footer-content .footer-content-about h4 {
-    color: #89d2a6;
+    color: #73ab89;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
   footer .footer-content .footer-content-about p {
     font-size: 0.9rem;
-    color: #73ab89;
+    color: #7887a5;
   }
   footer .footer-content .footer-content-about form {
     display: flex;
@@ -1269,7 +1269,7 @@ main.home .other {
   footer .footer-content .footer-content-about form input[type=text],
 footer .footer-content .footer-content-about form input[type=email] {
     background: #293856;
-    color: #c2f0d4;
+    color: #bfd0f2;
     padding: 0.4em 0.6em;
     margin-bottom: 0.5em;
     width: 100%;
