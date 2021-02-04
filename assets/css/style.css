@@ -245,18 +245,22 @@ main .hero .hero-image h2 {
 }
 main .hero #HomePageHero {
   background-color: #31aa62;
+  background-image: url("https://images.unsplash.com/photo-1529792083865-d23889753466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-blend-mode: luminosity;
 }
 main .hero #TestAndTagHero {
   background-color: #73ab89;
+  background-image: url("https://images.unsplash.com/photo-1529792083865-d23889753466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-blend-mode: luminosity;
 }
 main .hero #DataAndElectricalHero {
   background-color: #89d2a6;
+  background-image: url("https://images.unsplash.com/photo-1529792083865-d23889753466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-blend-mode: luminosity;
 }
 main .hero #OtherServicesHero {
   background-color: #b9e4ca;
+  background-image: url("https://images.unsplash.com/photo-1529792083865-d23889753466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   background-blend-mode: luminosity;
 }
 main .hero .hero-text {
