@@ -53,6 +53,7 @@ header .header-content .header-content-logo h1 {
   color: #f4fbf7;
   line-height: 1.05em;
   font-size: 1.6rem;
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 header .header-content .header-content-other {
   display: none;
@@ -63,12 +64,11 @@ header .header-content .header-content-menu-trigger {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 2px solid #f4fbf7;
   border-radius: 0.25rem;
 }
 header .header-content .header-content-menu-trigger a {
   padding: 0.6rem 0.65rem 0.4rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #f4fbf7;
 }
 header .header-content .header-content-menu-trigger a:hover, header .header-content .header-content-menu-trigger a:visited {
@@ -662,6 +662,7 @@ main .quote .quote-form form div fieldset textarea {
   background: #f4f6fb;
   color: #1b1f27;
   font-family: "Fira Sans Condensed", sans-serif;
+  box-shadow: -1px -1px 1px #e1e6ef;
   padding: 0.75rem;
   font-size: 1rem;
 }
@@ -750,12 +751,13 @@ footer .footer-content .footer-content-contact h4 {
   font-size: 2.5rem;
   color: #31aa62;
   line-height: 1em;
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 footer .footer-content .footer-content-contact h5 {
   font-size: 1.5rem;
   line-height: 1.5em;
   font-style: italic;
-  color: #4b9b6b;
+  color: #437055;
 }
 footer .footer-content .footer-content-contact ul {
   margin-top: 1rem;
@@ -812,10 +814,6 @@ footer .footer-copyright h6 {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  header .header-content .header-content-logo h1 {
-    color: white;
-    line-height: 1.05em;
   }
   header .header-content .header-content-other {
     display: flex;
@@ -902,7 +900,7 @@ footer .footer-copyright h6 {
   }
   header .header-nav .header-nav-main-links > li:hover {
     color: #e2eee7;
-    background: #2d533c;
+    background: #437055;
   }
   header .header-nav .header-nav-main-links > li > a,
 header .header-nav .header-nav-main-links > li > a:visited,
@@ -963,7 +961,7 @@ header .header-nav .header-nav-main-links > li > a:hover {
   }
   header .header-nav .header-nav-main-links > li ul > div li a i, header .header-nav .header-nav-main-links > li ul > div li a:visited i {
     font-size: 2rem;
-    color: #4b9b6b;
+    color: #31aa62;
     margin-right: 0.5rem;
     text-align: center;
     width: 3rem;
@@ -977,7 +975,7 @@ header .header-nav .header-nav-main-links > li > a:hover {
     padding-top: 0.15rem;
     font-weight: 400;
     font-size: 0.9rem;
-    color: #b9e4ca;
+    color: #c2cbdb;
   }
   header .header-nav .header-nav-main-links > li ul > div li a:hover > i, header .header-nav .header-nav-main-links > li ul > div li a:visited:hover > i {
     color: #e2eee7;
@@ -1168,12 +1166,6 @@ main .quote .quote-form form div fieldset textarea {
     padding: 0.75rem;
     font-size: 1rem;
   }
-  main .quote .quote-form form div fieldset input::placeholder,
-main .quote .quote-form form div fieldset select::placeholder,
-main .quote .quote-form form div fieldset textarea::placeholder {
-    color: #7887a5;
-    opacity: 1;
-  }
   main .quote .quote-form form div fieldset textarea {
     height: 13.7rem;
   }
@@ -1271,7 +1263,7 @@ main.home .other {
   footer .footer-content .footer-content-about form input[type=text],
 footer .footer-content .footer-content-about form input[type=email] {
     background: #293856;
-    color: #bfd0f2;
+    color: #cdd5e4;
     padding: 0.4em 0.6em;
     margin-bottom: 0.5em;
     width: 100%;

@@ -11,14 +11,14 @@ $theme-colour-3: hsl(144, 60%, 85%);
 $theme-colour-4: hsl(144, 45%, 81%);
 $theme-colour-5: hsl(144, 45%, 68%);;
 $theme-colour-6: hsl(144, 35%, 45%);
-$theme-colour-7: hsl(144, 30%, 25%);
+$theme-colour-7: hsl(144, 25%, 35%);
 $theme-colour-8: hsl(144, 14%, 13%);
 
 $theme-colour-1b: hsl(220, 50%, 97%);
 $theme-colour-2b: hsl(220, 32%, 91%);
-$theme-colour-3b: hsl(220, 67%, 85%);
-$theme-colour-4b: hsl(220, 50%, 81%);
-$theme-colour-5b: hsl(220, 50%, 68%);;
+$theme-colour-3b: hsl(220, 30%, 85%);
+$theme-colour-4b: hsl(220, 25%, 81%);
+$theme-colour-5b: hsl(220, 25%, 68%);;
 $theme-colour-6b: hsl(220, 20%, 56%);
 $theme-colour-7b: hsl(220, 35%, 25%);
 $theme-colour-8b: hsl(220, 19%, 13%);
@@ -72,6 +72,7 @@ header {
         color: $theme-colour-1;
         line-height: 1.05em;
         font-size:1.6rem;
+        text-shadow: $theme-shadow-1;
       }
     }
     .header-content-other {
@@ -83,11 +84,10 @@ header {
       display: flex;
       flex-direction: row;
       align-items: center;
-      border: 2px solid $theme-colour-1;
       border-radius: 0.25rem;
       a {
         padding: 0.6rem 0.65rem 0.4rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: $theme-colour-1;
         &:hover,
         &:visited {
@@ -683,6 +683,7 @@ main {
               background: $theme-colour-1b;
               color: $theme-colour-8b;
               font-family: $theme-font;
+              box-shadow:-1px -1px 1px $theme-colour-2b;
               padding: 0.75rem;
               font-size: 1rem;
               &::placeholder {
@@ -773,12 +774,13 @@ footer {
         font-size: 2.5rem;
         color: $theme-colour-main;
         line-height: 1em;
+        text-shadow: $theme-shadow-1;
       }
       h5 {
         font-size: 1.5rem;
         line-height: 1.5em;
         font-style: italic;
-        color: $theme-colour-6;
+        color: $theme-colour-7;
       }
       ul {
         margin-top: 1rem;
@@ -837,10 +839,6 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
-        h1 {
-          color: white;
-          line-height: 1.05em;
-        }
       }
       .header-content-other {
         display: flex;
@@ -988,7 +986,7 @@ footer {
                   }
                   i {
                     font-size: 2rem;
-                    color: $theme-colour-6;
+                    color: $theme-colour-main;
                     margin-right: 0.5rem;
                     text-align: center;
                     width: 3rem;
@@ -1002,7 +1000,7 @@ footer {
                     padding-top: 0.15rem;
                     font-weight: 400;
                     font-size: 0.9rem;
-                    color: $theme-colour-4;
+                    color: $theme-colour-4b;
                     }
                     &:hover > i {
                       color: $theme-colour-2;
@@ -1263,10 +1261,6 @@ footer {
               textarea {
                 padding: 0.75rem;
                 font-size: 1rem;
-                &::placeholder {
-                  color: $theme-colour-6b;
-                  opacity: 1;
-                }
               }
               textarea {
                 height: 13.7rem;
