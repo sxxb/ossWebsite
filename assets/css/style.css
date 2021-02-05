@@ -1277,6 +1277,7 @@ footer .footer-content .footer-content-about form input[type=email] {
     color: #e2eee7;
     background: #31aa62;
     font-family: "Fira Sans Condensed", sans-serif;
+    text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
     font-size: 1.2rem;
     line-height: 1em;
     font-weight: bold;
