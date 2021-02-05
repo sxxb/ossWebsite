@@ -10,7 +10,7 @@ $theme-colour-2: hsl(144, 27%, 91%);
 $theme-colour-3: hsl(144, 60%, 85%);
 $theme-colour-4: hsl(144, 45%, 81%);
 $theme-colour-5: hsl(144, 45%, 68%);;
-$theme-colour-6: hsl(144, 25%, 56%);
+$theme-colour-6: hsl(144, 35%, 45%);
 $theme-colour-7: hsl(144, 30%, 25%);
 $theme-colour-8: hsl(144, 14%, 13%);
 
@@ -146,11 +146,11 @@ header {
         list-style-type: none;
         font-size: 1.5rem;
         font-weight: bold;
-        color: $theme-colour-main;
+        color: $theme-colour-6;
         margin-top: 0.75rem;
         a,
         a:visited {
-          color: $theme-colour-main;
+          color: $theme-colour-6;
         }
         &:hover,
         a:hover {
@@ -292,7 +292,6 @@ main {
     }
   }
   .services {
-
     .services-title {
       margin: 2rem auto;
       h2 {
@@ -303,6 +302,7 @@ main {
         padding:0.5rem 2rem;
         text-align:center;
         box-shadow: $theme-shadow-1;
+        text-shadow: $theme-shadow-1;
       }
     }
     .services-list {
@@ -372,6 +372,7 @@ main {
         padding:0.5rem 2rem;
         text-align:center;
         box-shadow: $theme-shadow-1;
+        text-shadow: $theme-shadow-1;
       }
       h3 {
         font-size:1.5rem;
@@ -515,6 +516,7 @@ main {
         padding:0.5rem 2rem;
         text-align:center;
         box-shadow: $theme-shadow-1;
+        text-shadow: $theme-shadow-1;
       }
     }
     .why-tnt-copy {
@@ -523,7 +525,7 @@ main {
       p {
         line-height: 1.6em;
         margin-bottom: 1rem;
-        color: $theme-colour-7;
+        color: $theme-colour-7b;
       }
     }
     .why-tnt-button {
@@ -560,6 +562,7 @@ main {
         padding:0.5rem 2rem;
         text-align:center;
         box-shadow: $theme-shadow-1;
+        text-shadow: $theme-shadow-1;
       }
     }
     .clients-images-container {
@@ -616,6 +619,7 @@ main {
         padding:0.5rem 2rem;
         text-align:center;
         box-shadow: $theme-shadow-1;
+        text-shadow: $theme-shadow-1;
       }
     }
     .oss-promise-copy {
@@ -629,7 +633,6 @@ main {
     }
   }
   .quote {
-
     .quote-title {
       margin: 2rem auto;
       h2 {
@@ -640,6 +643,7 @@ main {
         padding:0.5rem 2rem;
         text-align:center;
         box-shadow: $theme-shadow-1;
+        text-shadow: $theme-shadow-1;
       }
     }
     .quote-copy p {
@@ -984,7 +988,7 @@ footer {
                   }
                   i {
                     font-size: 2rem;
-                    color: $theme-colour-5;
+                    color: $theme-colour-6;
                     margin-right: 0.5rem;
                     text-align: center;
                     width: 3rem;
@@ -998,7 +1002,7 @@ footer {
                     padding-top: 0.15rem;
                     font-weight: 400;
                     font-size: 0.9rem;
-                    color: $theme-colour-3;
+                    color: $theme-colour-4;
                     }
                     &:hover > i {
                       color: $theme-colour-2;

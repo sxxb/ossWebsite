@@ -124,12 +124,12 @@ header .header-nav .header-nav-main-links > li {
   list-style-type: none;
   font-size: 1.5rem;
   font-weight: bold;
-  color: #31aa62;
+  color: #4b9b6b;
   margin-top: 0.75rem;
 }
 header .header-nav .header-nav-main-links > li a,
 header .header-nav .header-nav-main-links > li a:visited {
-  color: #31aa62;
+  color: #4b9b6b;
 }
 header .header-nav .header-nav-main-links > li:hover,
 header .header-nav .header-nav-main-links > li a:hover {
@@ -276,6 +276,7 @@ main .services .services-title h2 {
   padding: 0.5rem 2rem;
   text-align: center;
   box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .services .services-list {
   width: 100%;
@@ -344,6 +345,7 @@ main .services-content .services-content-title h2, main .services-content .body-
   padding: 0.5rem 2rem;
   text-align: center;
   box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .services-content .services-content-title h3, main .services-content .body-content-title h3, main .body-content .services-content-title h3, main .body-content .body-content-title h3 {
   font-size: 1.5rem;
@@ -498,6 +500,7 @@ main .why-tnt .why-tnt-title h2 {
   padding: 0.5rem 2rem;
   text-align: center;
   box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .why-tnt .why-tnt-copy {
   width: 90%;
@@ -506,7 +509,7 @@ main .why-tnt .why-tnt-copy {
 main .why-tnt .why-tnt-copy p {
   line-height: 1.6em;
   margin-bottom: 1rem;
-  color: #2d533c;
+  color: #293856;
 }
 main .why-tnt .why-tnt-button {
   margin: 2rem auto;
@@ -540,6 +543,7 @@ main .clients .clients-title h2 {
   padding: 0.5rem 2rem;
   text-align: center;
   box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .clients .clients-images-container {
   display: flex;
@@ -593,6 +597,7 @@ main .oss-promise .oss-promise-title h2 {
   padding: 0.5rem 2rem;
   text-align: center;
   box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .oss-promise .oss-promise-copy {
   width: 90%;
@@ -614,6 +619,7 @@ main .quote .quote-title h2 {
   padding: 0.5rem 2rem;
   text-align: center;
   box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .quote .quote-copy p {
   margin: 0 auto 2rem auto;
@@ -749,7 +755,7 @@ footer .footer-content .footer-content-contact h5 {
   font-size: 1.5rem;
   line-height: 1.5em;
   font-style: italic;
-  color: #73ab89;
+  color: #4b9b6b;
 }
 footer .footer-content .footer-content-contact ul {
   margin-top: 1rem;
@@ -957,7 +963,7 @@ header .header-nav .header-nav-main-links > li > a:hover {
   }
   header .header-nav .header-nav-main-links > li ul > div li a i, header .header-nav .header-nav-main-links > li ul > div li a:visited i {
     font-size: 2rem;
-    color: #89d2a6;
+    color: #4b9b6b;
     margin-right: 0.5rem;
     text-align: center;
     width: 3rem;
@@ -971,7 +977,7 @@ header .header-nav .header-nav-main-links > li > a:hover {
     padding-top: 0.15rem;
     font-weight: 400;
     font-size: 0.9rem;
-    color: #c2f0d4;
+    color: #b9e4ca;
   }
   header .header-nav .header-nav-main-links > li ul > div li a:hover > i, header .header-nav .header-nav-main-links > li ul > div li a:visited:hover > i {
     color: #e2eee7;
@@ -1249,7 +1255,7 @@ main.home .other {
     margin-bottom: 2rem;
   }
   footer .footer-content .footer-content-about h4 {
-    color: #73ab89;
+    color: #4b9b6b;
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
