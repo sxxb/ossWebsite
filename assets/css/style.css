@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,400;0,700;1,400;1,800&display=swap");
+@import url("https://use.typekit.net/bte7jqj.css");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,7 +19,7 @@
 
 html {
   font-size: 100%;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: azo-sans-web, sans-serif;
 }
 
 header {
@@ -41,19 +41,21 @@ header .header-content .header-content-logo {
   flex-direction: row;
   align-items: center;
 }
-header .header-content .header-content-logo img {
-  width: 4rem;
+header .header-content .header-content-logo .header-content-logo-img {
+  width: 3rem;
   height: 4rem;
-  background-image: url("../../img/placeholder.png");
+  background-image: url("../../img/logo/logo120px.png");
   background-position: center;
   background-size: cover;
-  margin-right: 1rem;
+  margin-right: 0.75rem;
+  filter: drop-shadow(0 5px 5px rgba(33, 33, 33, 0.13));
 }
 header .header-content .header-content-logo h1 {
   color: #f4fbf7;
+  font-size: 3rem;
   line-height: 1.05em;
-  font-size: 1.6rem;
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  font-weight: 400;
 }
 header .header-content .header-content-other {
   display: none;
@@ -100,14 +102,27 @@ header .header-nav .header-nav-mobile-header {
   align-items: center;
   width: 100%;
 }
+header .header-nav .header-nav-mobile-header > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+header .header-nav .header-nav-mobile-header .header-mobile-logo-img {
+  width: 3rem;
+  height: 4rem;
+  background-image: url("../../img/logo/logo120px.png");
+  background-position: center;
+  background-size: cover;
+  margin-right: 1rem;
+}
 header .header-nav .header-nav-mobile-header h1 {
-  font-size: 1.2rem;
+  font-size: 3rem;
+  font-weight: 400;
 }
 header .header-nav .header-nav-mobile-header i {
   font-size: 3rem;
   line-height: 1em;
-  padding-top: 0.75rem;
-  padding-right: 0.5rem;
 }
 header .header-nav .header-nav-mobile-header i:hover {
   color: #89d2a6;
@@ -123,7 +138,7 @@ header .header-nav .header-nav-main-links {
 header .header-nav .header-nav-main-links > li {
   list-style-type: none;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 400;
   color: #4b9b6b;
   margin-top: 0.75rem;
 }
@@ -159,7 +174,7 @@ header .header-nav .header-nav-main-links > li ul > div li {
 header .header-nav .header-nav-main-links > li ul > div li a {
   width: 100%;
   color: #89d2a6;
-  font-weight: bold;
+  font-weight: 700;
   transition: 0.2s ease;
 }
 header .header-nav .header-nav-main-links > li ul > div li a:hover, header .header-nav .header-nav-main-links > li ul > div li a:hover > i {
@@ -193,7 +208,7 @@ header .header-nav .header-nav-sub-links {
 }
 header .header-nav .header-nav-sub-links a {
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #31aa62;
 }
 header .header-nav .header-nav-sub-links a:hover {
@@ -270,13 +285,13 @@ main .services .services-title {
 }
 main .services .services-title h2 {
   font-size: 2.5rem;
-  font-style: italic;
   background: #31aa62;
   color: white;
   padding: 0.5rem 2rem;
   text-align: center;
   box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  font-weight: 700;
 }
 main .services .services-list {
   width: 100%;
@@ -339,13 +354,13 @@ main .services-content .services-content-title, main .services-content .body-con
 }
 main .services-content .services-content-title h2, main .services-content .body-content-title h2, main .body-content .services-content-title h2, main .body-content .body-content-title h2 {
   font-size: 2.5rem;
-  font-style: italic;
   background: #31aa62;
   color: white;
   padding: 0.5rem 2rem;
   text-align: center;
   box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  font-weight: 700;
 }
 main .services-content .services-content-title h3, main .services-content .body-content-title h3, main .body-content .services-content-title h3, main .body-content .body-content-title h3 {
   font-size: 1.5rem;
@@ -391,7 +406,7 @@ main .services-content .services-content-copy ul.service-dot-points li::before, 
   width: 1rem;
   text-align: center;
   border-radius: 50%;
-  font-weight: 900;
+  font-weight: 700;
   padding: 0.25rem;
   transform: rotateZ(12deg);
 }
@@ -447,11 +462,11 @@ main .services-content .services-content-button button, main .services-content .
   display: flex;
   align-items: center;
   padding: 1rem 4rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   background: #31aa62;
   color: #f4fbf7;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: bold;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: 700;
   transition: 0.2s ease;
   cursor: pointer;
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
@@ -494,13 +509,13 @@ main .why-tnt .why-tnt-title {
 }
 main .why-tnt .why-tnt-title h2 {
   font-size: 2.5rem;
-  font-style: italic;
   background: #31aa62;
   color: white;
   padding: 0.5rem 2rem;
   text-align: center;
   box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  font-weight: 700;
 }
 main .why-tnt .why-tnt-copy {
   width: 90%;
@@ -523,8 +538,8 @@ main .why-tnt .why-tnt-button button {
   font-size: 1.2rem;
   background: #31aa62;
   color: #f4fbf7;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: bold;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: 700;
   transition: 0.2s ease;
   cursor: pointer;
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
@@ -537,13 +552,13 @@ main .clients .clients-title {
 }
 main .clients .clients-title h2 {
   font-size: 2.5rem;
-  font-style: italic;
   background: #31aa62;
   color: white;
   padding: 0.5rem 2rem;
   text-align: center;
   box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  font-weight: 700;
 }
 main .clients .clients-images-container {
   display: flex;
@@ -591,13 +606,13 @@ main .oss-promise .oss-promise-title {
 }
 main .oss-promise .oss-promise-title h2 {
   font-size: 2.5rem;
-  font-style: italic;
   background: #31aa62;
   color: white;
   padding: 0.5rem 2rem;
   text-align: center;
   box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  font-weight: 700;
 }
 main .oss-promise .oss-promise-copy {
   width: 90%;
@@ -613,13 +628,13 @@ main .quote .quote-title {
 }
 main .quote .quote-title h2 {
   font-size: 2.5rem;
-  font-style: italic;
   background: #31aa62;
   color: white;
   padding: 0.5rem 2rem;
   text-align: center;
   box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  font-weight: 700;
 }
 main .quote .quote-copy p {
   margin: 0 auto 2rem auto;
@@ -661,7 +676,7 @@ main .quote .quote-form form div fieldset select,
 main .quote .quote-form form div fieldset textarea {
   background: #f4f6fb;
   color: #1b1f27;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: azo-sans-web, sans-serif;
   box-shadow: -1px -1px 1px #e1e6ef;
   padding: 0.75rem;
   font-size: 1rem;
@@ -675,7 +690,7 @@ main .quote .quote-form form div fieldset textarea::placeholder {
 main .quote .quote-form form div fieldset option {
   background: #f4f6fb;
   color: #7887a5;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: azo-sans-web, sans-serif;
 }
 main .quote .quote-form form div fieldset select:required:invalid {
   color: #7887a5;
@@ -709,8 +724,8 @@ main .quote .quote-form form div input[type=submit] {
   font-size: 1.2rem;
   background: #31aa62;
   color: #f4fbf7;
-  font-family: "Fira Sans Condensed", sans-serif;
-  font-weight: bold;
+  font-family: azo-sans-web, sans-serif;
+  font-weight: 700;
   transition: 0.2s ease;
   cursor: pointer;
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
@@ -742,30 +757,32 @@ footer .footer-content {
   padding: 5rem 1rem 2rem;
 }
 footer .footer-content .footer-content-contact {
-  width: 250px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 footer .footer-content .footer-content-contact h4 {
-  font-size: 2.5rem;
+  font-size: 7rem;
   color: #31aa62;
   line-height: 1em;
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  font-weight: 400;
 }
 footer .footer-content .footer-content-contact h5 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   line-height: 1.5em;
-  font-style: italic;
   color: #437055;
+  padding-left: 0.75rem;
 }
 footer .footer-content .footer-content-contact ul {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 footer .footer-content .footer-content-contact ul li {
   list-style-type: none;
   padding-bottom: 0.5rem;
   color: #7887a5;
+  font-size: 0.9rem;
 }
 footer .footer-content .footer-content-contact ul li:last-of-type {
   padding-bottom: 0;
@@ -832,7 +849,7 @@ footer .footer-copyright h6 {
     width: 90%;
     background: none;
     padding: 0.5rem;
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: azo-sans-web, sans-serif;
   }
   header .header-content .header-content-other .header-content-search form button[type=submit] {
     width: 10%;
@@ -849,11 +866,13 @@ footer .footer-copyright h6 {
     line-height: 1rem;
     font-style: italic;
     color: #b9e4ca;
+    text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
   }
   header .header-content .header-content-other .header-content-contact h3, header .header-content .header-content-other .header-content-contact h3 a {
     font-size: 1.75rem;
     line-height: 1.5rem;
     color: white;
+    text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
   }
   header .header-content .header-content-menu-trigger {
     display: none;
@@ -950,7 +969,7 @@ header .header-nav .header-nav-main-links > li > a:hover {
     text-align: left;
     align-items: center;
     justify-content: flex-start;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.25rem;
   }
   header .header-nav .header-nav-main-links > li ul > div li a:hover, header .header-nav .header-nav-main-links > li ul > div li a:visited:hover {
@@ -1033,7 +1052,7 @@ header .header-nav .header-nav-main-links > li ul:hover {
   }
   footer .footer-content .footer-content-links a {
     color: #7887a5;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1.2rem;
     display: flex;
   }
@@ -1185,8 +1204,8 @@ main .quote .quote-form form div fieldset textarea {
     font-size: 1.2rem;
     background: #31aa62;
     color: #f4fbf7;
-    font-family: "Fira Sans Condensed", sans-serif;
-    font-weight: bold;
+    font-family: azo-sans-web, sans-serif;
+    font-weight: 700;
     transition: 0.2s ease;
     cursor: pointer;
     text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
@@ -1227,7 +1246,7 @@ main.home .other {
 
   footer .footer-content .footer-content-contact {
     width: 30%;
-    max-width: 250px;
+    max-width: 300px;
   }
   footer .footer-content .footer-content-links {
     max-width: 30%;
@@ -1268,7 +1287,7 @@ footer .footer-content .footer-content-about form input[type=email] {
     margin-bottom: 0.5em;
     width: 100%;
     font-size: 1rem;
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: azo-sans-web, sans-serif;
   }
   footer .footer-content .footer-content-about form input[type=submit] {
     padding: 0.4em;
@@ -1276,11 +1295,11 @@ footer .footer-content .footer-content-about form input[type=email] {
     margin: 0.2em auto 0;
     color: #e2eee7;
     background: #31aa62;
-    font-family: "Fira Sans Condensed", sans-serif;
+    font-family: azo-sans-web, sans-serif;
     text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
     font-size: 1.2rem;
     line-height: 1em;
-    font-weight: bold;
+    font-weight: 700;
     cursor: pointer;
   }
   footer .footer-content .footer-content-about form input[type=submit]:hover {
