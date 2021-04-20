@@ -40,6 +40,9 @@ $theme-shadow-2: 0 0 5vh hsla(0, 0%, 0%, 0.25), 0 5px 15px hsla(0, 0%, 12.9%, 0.
     -moz-osx-font-smoothing: auto;
   }
 }
+a, a:visited {
+  color: inherit;
+}
 html {
   font-size: 100%;
   font-family: $theme-font;

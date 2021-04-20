@@ -17,6 +17,10 @@
   }
 }
 
+a, a:visited {
+  color: inherit;
+}
+
 html {
   font-size: 100%;
   font-family: azo-sans-web, sans-serif;
