@@ -403,9 +403,12 @@ main .services-content .services-content-copy ul.service-dot-points li, main .se
   padding-top: 1rem;
   color: #293856;
   font-size: 1rem;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
 }
 main .services-content .services-content-copy ul.service-dot-points li::before, main .services-content .body-content-copy ul.service-dot-points li::before, main .body-content .services-content-copy ul.service-dot-points li::before, main .body-content .body-content-copy ul.service-dot-points li::before {
-  display: inline-block;
+  display: inline-block !important;
   content: "";
   background-color: #31aa62;
   color: #f4fbf7;
@@ -419,6 +422,7 @@ main .services-content .services-content-copy ul.service-dot-points li::before, 
   font-weight: 700;
   padding: 0.25rem;
   transform: rotateZ(12deg);
+  margin-left: 2.6rem;
 }
 main .services-content .services-content-copy ul.contact-list-container, main .services-content .body-content-copy ul.contact-list-container, main .body-content .services-content-copy ul.contact-list-container, main .body-content .body-content-copy ul.contact-list-container {
   width: max-content;
