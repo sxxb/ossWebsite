@@ -404,8 +404,6 @@ main .services-content .services-content-copy ul.service-dot-points li, main .se
   color: #293856;
   font-size: 1rem;
   padding-left: 3rem;
-  display: flex;
-  align-items: center;
 }
 main .services-content .services-content-copy ul.service-dot-points li::before, main .services-content .body-content-copy ul.service-dot-points li::before, main .body-content .services-content-copy ul.service-dot-points li::before, main .body-content .body-content-copy ul.service-dot-points li::before {
   display: inline-block !important;

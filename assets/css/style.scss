@@ -418,8 +418,6 @@ main {
           color:$theme-colour-7b;
           font-size:1rem;
           padding-left:3rem;
-          display:flex;
-          align-items:center;
           &::before {
             display:inline-block !important;
             content: "\f0e7";
