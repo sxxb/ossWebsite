@@ -6,15 +6,6 @@
   padding: 0;
   border: 0;
   text-decoration: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  * {
-    -webkit-font-smoothing: auto;
-    -moz-osx-font-smoothing: auto;
-  }
 }
 
 a, a:visited {
@@ -275,10 +266,19 @@ main .hero #OtherServicesHero {
   background-image: url("https://images.unsplash.com/photo-1529792083865-d23889753466?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
 }
 main .hero #SolarHero {
-  background-image: url("https://images.unsplash.com/photo-1584276433295-4b49a252e5ee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1342&q=80");
+  background-image: url("https://as2.ftcdn.net/v2/jpg/04/16/39/07/1000_F_416390749_RD6BvKmOOKrtEUER4f7Tk8pfc71Tm3m4.jpg");
 }
 main .hero #SecurityHero {
   background-image: url("https://images.unsplash.com/photo-1589935447067-5531094415d1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+}
+main .hero #ThermographyHero {
+  background-image: url("https://as1.ftcdn.net/v2/jpg/01/26/26/50/1000_F_126265078_Z7KPRZ5v3N0XniFLwfpCMeR3irOBwCPL.jpg");
+}
+main .hero #MicrowaveHero {
+  background-image: url("https://as2.ftcdn.net/v2/jpg/01/86/53/47/1000_F_186534712_y9oZENrZnWSTyV9XJOPep5t6NzVX8G2w.jpg");
+}
+main .hero #DataCablingHero {
+  background-image: url("https://as2.ftcdn.net/jpg/02/11/77/07/500_F_211770741_gH3pUAFhtftVBKPXOpTHl04fePsfcQF8.jpg");
 }
 main .hero .hero-text {
   width: 90%;
