@@ -414,17 +414,20 @@ main .services-content .services-content-copy a:hover, main .services-content .s
   color: #40bf73;
 }
 main .services-content .services-content-copy ul.service-dot-points, main .services-content .body-content-copy ul.service-dot-points, main .body-content .services-content-copy ul.service-dot-points, main .body-content .body-content-copy ul.service-dot-points {
-  padding-left: 1rem;
   margin: 1rem 0 2rem 0;
 }
 main .services-content .services-content-copy ul.service-dot-points li, main .services-content .body-content-copy ul.service-dot-points li, main .body-content .services-content-copy ul.service-dot-points li, main .body-content .body-content-copy ul.service-dot-points li {
   list-style-type: none;
   padding-top: 1rem;
+  padding-bottom: 0.5rem;
   color: #293856;
-  font-size: 1rem;
-  padding-left: 3rem;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
 }
-main .services-content .services-content-copy ul.service-dot-points li::before, main .services-content .body-content-copy ul.service-dot-points li::before, main .body-content .services-content-copy ul.service-dot-points li::before, main .body-content .body-content-copy ul.service-dot-points li::before {
+main .services-content .services-content-copy ul.service-dot-points li .service-dot-point-marker::before, main .services-content .body-content-copy ul.service-dot-points li .service-dot-point-marker::before, main .body-content .services-content-copy ul.service-dot-points li .service-dot-point-marker::before, main .body-content .body-content-copy ul.service-dot-points li .service-dot-point-marker::before {
   display: inline-block !important;
   content: "";
   background-color: #31aa62;
@@ -439,7 +442,6 @@ main .services-content .services-content-copy ul.service-dot-points li::before, 
   font-weight: 700;
   padding: 0.25rem;
   transform: rotateZ(12deg);
-  margin-left: 2.6rem;
 }
 main .services-content .services-content-copy ul.contact-list-container, main .services-content .body-content-copy ul.contact-list-container, main .body-content .services-content-copy ul.contact-list-container, main .body-content .body-content-copy ul.contact-list-container {
   width: max-content;
@@ -708,7 +710,7 @@ main .quote .quote-form form div fieldset textarea {
   background: #f4f6fb;
   color: #1b1f27;
   font-family: azo-sans-web, sans-serif;
-  box-shadow: -1px -1px 1px #e1e6ef;
+  box-shadow: -1px -1px 1px #cdd5e4;
   padding: 0.75rem;
   font-size: 1rem;
 }
@@ -795,7 +797,7 @@ footer .footer-content .footer-content-contact {
 }
 footer .footer-content .footer-content-contact h4 {
   font-size: 7rem;
-  color: #31aa62;
+  color: #40bf73;
   line-height: 1em;
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
   font-weight: 400;
@@ -803,11 +805,12 @@ footer .footer-content .footer-content-contact h4 {
 footer .footer-content .footer-content-contact h5 {
   font-size: 1rem;
   line-height: 1.5em;
-  color: #437055;
+  color: #4b9b6b;
   padding-left: 0.75rem;
 }
 footer .footer-content .footer-content-contact ul {
   margin-top: 2rem;
+  padding-left: 0.5rem;
 }
 footer .footer-content .footer-content-contact ul li {
   list-style-type: none;
@@ -834,11 +837,13 @@ footer .footer-content .footer-content-about {
   display: none;
 }
 footer .footer-copyright {
-  padding: 2rem 0;
+  padding: 3rem 0;
 }
 footer .footer-copyright h6 {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
   font-weight: 400;
+  letter-spacing: 1.5;
   text-align: center;
   color: #7887a5;
 }
@@ -950,7 +955,7 @@ footer .footer-copyright h6 {
   }
   header .header-nav .header-nav-main-links > li:hover {
     color: #e2eee7;
-    background: #437055;
+    background: #31aa62;
   }
   header .header-nav .header-nav-main-links > li > a,
 header .header-nav .header-nav-main-links > li > a:visited,
@@ -1113,7 +1118,8 @@ header .header-nav .header-nav-main-links > li ul:hover {
     margin: auto;
   }
   main .hero .hero-image {
-    height: 40vh;
+    height: 50vh;
+    background-attachment: fixed;
   }
   main .hero .hero-text p {
     font-size: 1.15rem;

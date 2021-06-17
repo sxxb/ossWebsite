@@ -439,15 +439,18 @@ main {
         &:hover, &:hover * {color:$theme-colour-main-2} //tbc
       }
       ul.service-dot-points {
-        padding-left:1rem;
         margin:1rem 0 2rem 0;
         li {
           list-style-type:none;
           padding-top: 1rem;
+          padding-bottom:0.5rem;
           color:$theme-colour-7b;
-          font-size:1rem;
-          padding-left:3rem;
-          &::before {
+          font-size:0.95rem;
+          display:flex;
+          flex-direction:row;
+          align-items:center;
+          justify-content: flex-start;
+          .service-dot-point-marker::before {
             display:inline-block !important;
             content: "\f0e7";
             background-color:$theme-colour-main;
@@ -462,8 +465,24 @@ main {
             font-weight:700;
             padding:0.25rem;
             transform: rotateZ(12deg);
-            margin-left:2.6rem;
           }
+          // &::before {
+          //   display:inline-block !important;
+          //   content: "\f0e7";
+          //   background-color:$theme-colour-main;
+          //   color:$theme-colour-1;
+          //   font-family: "Font Awesome 5 Free" ;
+          //   font-size:1rem;
+          //   margin-right:1rem;
+          //   height:1rem;
+          //   width:1rem;
+          //   text-align:center;
+          //   border-radius:50%;
+          //   font-weight:700;
+          //   padding:0.25rem;
+          //   transform: rotateZ(12deg);
+          //   margin-left:2.6rem;
+          // }
         }
       }
       ul.contact-list-container {
@@ -731,7 +750,7 @@ main {
               background: $theme-colour-1b;
               color: $theme-colour-8b;
               font-family: $theme-font;
-              box-shadow:-1px -1px 1px $theme-colour-2b;
+              box-shadow:-1px -1px 1px $theme-colour-3b;
               padding: 0.75rem;
               font-size: 1rem;
               &::placeholder {
@@ -820,7 +839,7 @@ footer {
       justify-content: space-between;
       h4 {
         font-size: 7rem;
-        color: $theme-colour-main;
+        color: $theme-colour-main-2;
         line-height: 1em;
         text-shadow: $theme-shadow-1;
         font-weight:400;
@@ -829,11 +848,12 @@ footer {
         font-size: 1rem;
         line-height: 1.5em;
         // font-style: italic;
-        color: $theme-colour-7;
+        color: $theme-colour-6;
         padding-left:0.75rem;
       }
       ul {
         margin-top: 2rem;
+        padding-left:0.5rem;
         li {
           list-style-type: none;
           padding-bottom: 0.5rem;
@@ -862,10 +882,12 @@ footer {
     }
   }
   .footer-copyright {
-    padding: 2rem 0;
+    padding: 3rem 0;
     h6 {
-      font-size: 0.85rem;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
       font-weight: 400;
+      letter-spacing: 1.5;
       text-align: center;
       color: $theme-colour-6b;
     }
@@ -979,7 +1001,7 @@ footer {
           }
           &:hover {
             color: $theme-colour-2;
-            background: $theme-colour-7;
+            background: $theme-colour-main;
           }
           > a,
           > a:visited,
@@ -1172,7 +1194,8 @@ footer {
     }
     .hero {
       .hero-image {
-        height: 40vh;
+        height: 50vh;
+        background-attachment: fixed;
       }
       .hero-text {
         p {
