@@ -235,8 +235,9 @@ main .main-section {
 main .hero .hero-image {
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 40vh;
+  height: 400px;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
@@ -255,6 +256,7 @@ main .hero .hero-image h2 {
 }
 main .hero #HomePageHero {
   background-image: url("https://as2.ftcdn.net/v2/jpg/03/35/86/69/1000_F_335866989_mddjsQMJpMunczPqeVjZf7rCYVL0cx7E.jpg");
+  background-image: url("../../img/hero-test.png");
   background-position: top;
 }
 main .hero #TestAndTagHero {
@@ -1132,7 +1134,7 @@ header .header-nav .header-nav-main-links > li ul:hover {
     margin: auto;
   }
   main .hero .hero-image {
-    height: 50vh;
+    height: 450px;
     background-attachment: fixed;
   }
   main .hero .hero-text p {
