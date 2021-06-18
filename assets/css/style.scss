@@ -572,17 +572,17 @@ main {
     }
   }
   .why-tnt {
-
+    background: $theme-colour-main;
+    box-shadow: $theme-shadow-1;
     .why-tnt-title {
       margin: 2rem auto;
       h2 {
         font-size: 2.5rem;
         background: $theme-colour-main;
+        border:0.25rem solid $theme-colour-1;
         color: white;
         padding:0.5rem 2rem;
         text-align:center;
-        box-shadow: $theme-shadow-1;
-        text-shadow: $theme-shadow-1;
         font-weight:700;
       }
     }
@@ -592,27 +592,34 @@ main {
       p {
         line-height: 1.6em;
         margin-bottom: 1rem;
-        color: $theme-colour-7b;
+        color: $theme-colour-1;
       }
     }
     .why-tnt-button {
       margin: 2rem auto;
       width: 100%;
-      button {
+      display:flex;
+      a {
         margin: 0 auto;
         display: flex;
         align-items: center;
         padding: 1rem 4rem;
         font-size: 1.2rem;
         background: $theme-colour-main;
+        border:0.25rem solid $theme-colour-1;
         color: $theme-colour-1;
         font-family: $theme-font;
         font-weight: 700;
         transition: 0.2s ease;
         cursor: pointer;
         text-shadow: $theme-shadow-1;
+        width:auto;
         &:hover {
           background: $theme-colour-main-2;
+        }
+        a {
+          width:auto;
+          height:auto;
         }
       }
     }
@@ -675,17 +682,17 @@ main {
     }
   }
   .oss-promise {
-
+    background: $theme-colour-main;
+    box-shadow: $theme-shadow-1;
     .oss-promise-title {
       margin: 2rem auto;
       h2 {
         font-size: 2.5rem;
         background: $theme-colour-main;
+        border:0.25rem solid $theme-colour-1;
         color: white;
         padding:0.5rem 2rem;
         text-align:center;
-        box-shadow: $theme-shadow-1;
-        text-shadow: $theme-shadow-1;
         font-weight:700;
       }
     }
@@ -695,7 +702,7 @@ main {
       p {
         line-height: 1.6em;
         margin-bottom: 1rem;
-        color: $theme-colour-7b;
+        color: $theme-colour-2;
       }
     }
   }
@@ -1200,7 +1207,7 @@ footer {
       }
       .hero-text {
         p {
-          font-size: 1.15rem;
+          font-size: 1.25rem;
         }
       }
     }

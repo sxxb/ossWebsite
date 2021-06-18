@@ -537,17 +537,20 @@ main .body-content-right .body-content-text-container {
   width: 90%;
   max-width: 40rem;
 }
+main .why-tnt {
+  background: #31aa62;
+  box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+}
 main .why-tnt .why-tnt-title {
   margin: 2rem auto;
 }
 main .why-tnt .why-tnt-title h2 {
   font-size: 2.5rem;
   background: #31aa62;
+  border: 0.25rem solid #f4fbf7;
   color: white;
   padding: 0.5rem 2rem;
   text-align: center;
-  box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
-  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
   font-weight: 700;
 }
 main .why-tnt .why-tnt-copy {
@@ -557,28 +560,35 @@ main .why-tnt .why-tnt-copy {
 main .why-tnt .why-tnt-copy p {
   line-height: 1.6em;
   margin-bottom: 1rem;
-  color: #293856;
+  color: #f4fbf7;
 }
 main .why-tnt .why-tnt-button {
   margin: 2rem auto;
   width: 100%;
+  display: flex;
 }
-main .why-tnt .why-tnt-button button {
+main .why-tnt .why-tnt-button a {
   margin: 0 auto;
   display: flex;
   align-items: center;
   padding: 1rem 4rem;
   font-size: 1.2rem;
   background: #31aa62;
+  border: 0.25rem solid #f4fbf7;
   color: #f4fbf7;
   font-family: azo-sans-web, sans-serif;
   font-weight: 700;
   transition: 0.2s ease;
   cursor: pointer;
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  width: auto;
 }
-main .why-tnt .why-tnt-button button:hover {
+main .why-tnt .why-tnt-button a:hover {
   background: #40bf73;
+}
+main .why-tnt .why-tnt-button a a {
+  width: auto;
+  height: auto;
 }
 main .clients .clients-title {
   margin: 2rem auto;
@@ -634,17 +644,20 @@ main .clients .clients-images-container #raywhite {
 main .clients .clients-images-container #allwater {
   background-image: url("../../img/allwater.png");
 }
+main .oss-promise {
+  background: #31aa62;
+  box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+}
 main .oss-promise .oss-promise-title {
   margin: 2rem auto;
 }
 main .oss-promise .oss-promise-title h2 {
   font-size: 2.5rem;
   background: #31aa62;
+  border: 0.25rem solid #f4fbf7;
   color: white;
   padding: 0.5rem 2rem;
   text-align: center;
-  box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
-  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
   font-weight: 700;
 }
 main .oss-promise .oss-promise-copy {
@@ -654,7 +667,7 @@ main .oss-promise .oss-promise-copy {
 main .oss-promise .oss-promise-copy p {
   line-height: 1.6em;
   margin-bottom: 1rem;
-  color: #293856;
+  color: #e2eee7;
 }
 main .quote .quote-title {
   margin: 2rem auto;
@@ -1123,7 +1136,7 @@ header .header-nav .header-nav-main-links > li ul:hover {
     background-attachment: fixed;
   }
   main .hero .hero-text p {
-    font-size: 1.15rem;
+    font-size: 1.25rem;
   }
   main .services .services-list {
     width: 100%;
