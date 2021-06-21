@@ -273,13 +273,13 @@ main {
       flex-direction: row;
       align-items: flex-end;
       justify-content: flex-end;
-      padding:5vh 5vw;
+      padding:1rem;
       background-image:url('../../img/placeholder.png');
       h2 {
         color:white;
         text-shadow:$theme-shadow-1, $theme-shadow-2;
         font-size:3rem;
-        background-color:rgba($theme-colour-8, 0.9);
+        background-color:$theme-colour-8;
         padding:0.1rem 0.4em 0.2rem;
       }
     }
@@ -1217,7 +1217,8 @@ footer {
     }
     .hero {
       .hero-image {
-
+        padding:5vh 5vw;
+        font-size:3rem;
       }
       .hero-text {
         p {
