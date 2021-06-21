@@ -187,12 +187,12 @@ header {
               align-items: stretch;
               a {
                 width:100%;
-                color: $theme-colour-5;
+                color: $theme-colour-main;
                 font-weight: 700;
                 transition: 0.2s ease;
                 &:hover,
                 &:hover > i {
-                  color: $theme-colour-main;
+                  color: $theme-colour-5;
                   transition: 0.2s ease;
                 }
                 &:hover > span {
@@ -201,7 +201,7 @@ header {
                 }
                 i {
                   font-size: 2rem;
-                  color: $theme-colour-5;
+                  color: $theme-colour-main;
                 }
                 span {
                   display: flex;
@@ -226,7 +226,7 @@ header {
       flex-direction: row;
       justify-content: space-evenly;
       a {
-        font-size: 1rem;
+        font-size: 0.9rem;
         font-weight: 700;
         color: $theme-colour-main;
         &:hover {

@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "getSassy": "cd assets/css && sass --watch style.scss style.css && cd ../.."
+  }
+}
