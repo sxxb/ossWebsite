@@ -259,15 +259,15 @@ main {
   }
   .hero {
     background-color: $theme-colour-main;
-    color:$theme-colour-8;
+    color:$theme-colour-1;
     .hero-image {
       background-position: center;
       background-size:contain;
       background-repeat: no-repeat;
       width: 100vw;
-      height: 66vw;
+      height: 33vw;
       max-width: 1200px;
-      max-height:800px;
+      max-height:400px;
       margin: 0 auto;
       display:flex;
       flex-direction: row;
@@ -336,11 +336,15 @@ main {
     .hero-text {
       width: 90%;
       max-width: 50rem;
-      margin: 2rem auto;
+      margin: 2rem auto 4rem;
+      h1 {
+        color $theme-colour-1;
+        font-size:2rem;
+      }
       p {
         font-size: 1.15rem;
         line-height: 1.6em;
-        color: $theme-colour-7b;
+        color: $theme-colour-1b;
       }
     }
   }
