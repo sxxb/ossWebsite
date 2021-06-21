@@ -262,7 +262,7 @@ main {
     color:$theme-colour-1;
     .hero-image {
       background-position: center;
-      background-size:contain;
+      background-size:cover;
       background-repeat: no-repeat;
       width: 100vw;
       height: 33vw;
@@ -287,8 +287,6 @@ main {
       background-image: url("https://as2.ftcdn.net/v2/jpg/03/35/86/69/1000_F_335866989_mddjsQMJpMunczPqeVjZf7rCYVL0cx7E.jpg");
       background-image: url("../../img/hero-test.png");
       background-position:top;
-
-
     }
     #TestAndTagHero {
       background-image: url("https://as2.ftcdn.net/v2/jpg/01/00/54/99/1000_F_100549988_475NqFlpi2Neh3aSq9BOw7dA4Apgi7gc.jpg");

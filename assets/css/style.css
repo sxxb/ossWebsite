@@ -238,7 +238,7 @@ main .hero {
 }
 main .hero .hero-image {
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 33vw;
