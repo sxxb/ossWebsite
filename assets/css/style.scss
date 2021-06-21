@@ -374,9 +374,9 @@ main {
     }
   }
   .services-content, .body-content {
-    padding: 2rem 0;
+    padding: 4rem 0;
     .services-content-title, .body-content-title {
-      margin: 2rem auto;
+      margin: 1rem auto;
       h2 {
         font-size: 2.5rem;
         background: $theme-colour-main;
@@ -1215,7 +1215,7 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: center;
       max-width: 1200px;
       width: 100%;
       margin: auto;
@@ -1265,7 +1265,7 @@ footer {
       }
     }
     .services-content, .body-content {
-      padding:4rem 0;
+      padding:2rem 0;
       .services-content-title, .body-content-title {
         margin-top:0;
       }

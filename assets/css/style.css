@@ -344,10 +344,10 @@ main .services .services-list ul li a span.text {
   width: 80%;
 }
 main .services-content, main .body-content {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 main .services-content .services-content-title, main .services-content .body-content-title, main .body-content .services-content-title, main .body-content .body-content-title {
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 main .services-content .services-content-title h2, main .services-content .body-content-title h2, main .body-content .services-content-title h2, main .body-content .body-content-title h2 {
   font-size: 2.5rem;
@@ -1147,7 +1147,7 @@ header .header-nav .header-nav-main-links > li ul:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     max-width: 1200px;
     width: 100%;
     margin: auto;
@@ -1182,7 +1182,7 @@ header .header-nav .header-nav-main-links > li ul:hover {
     font-size: 1.2rem;
   }
   main .services-content, main .body-content {
-    padding: 4rem 0;
+    padding: 2rem 0;
   }
   main .services-content .services-content-title, main .services-content .body-content-title, main .body-content .services-content-title, main .body-content .body-content-title {
     margin-top: 0;
