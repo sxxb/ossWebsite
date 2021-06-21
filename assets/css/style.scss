@@ -262,9 +262,10 @@ main {
       background-position: center;
       background-size:contain;
       background-repeat: no-repeat;
-      width: 100%;
-      height: 400px;
+      width: 100vw;
+      height: 66vw;
       max-width: 1200px;
+      max-height:800px;
       margin: 0 auto;
       display:flex;
       flex-direction: row;
@@ -1206,8 +1207,7 @@ footer {
     }
     .hero {
       .hero-image {
-        height: 450px;
-        background-attachment: fixed;
+
       }
       .hero-text {
         p {
