@@ -344,7 +344,7 @@ main .services .services-list ul li a span.text {
   width: 80%;
 }
 main .services-content, main .body-content {
-  margin: 4rem 0;
+  margin: 4rem auto;
 }
 main .services-content .services-content-title, main .services-content .body-content-title, main .body-content .services-content-title, main .body-content .body-content-title {
   margin: 1rem auto;
@@ -1182,7 +1182,7 @@ header .header-nav .header-nav-main-links > li ul:hover {
     font-size: 1.2rem;
   }
   main .services-content, main .body-content {
-    margin: 5rem 0;
+    margin: 5rem auto;
   }
   main .services-content .services-content-title, main .services-content .body-content-title, main .body-content .services-content-title, main .body-content .body-content-title {
     margin-top: 0;
