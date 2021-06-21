@@ -529,7 +529,7 @@ main {
     .services-content-img-container, .body-content-img-container {
       width: 90%;
       max-width: 40rem;
-      height: 5rem; //tbc
+      height: 15rem;
       background-image:url('../../img/placeholder.png');
       background-position: center;
       background-size:cover;
@@ -834,7 +834,7 @@ main {
   #LightLevelTestingHero, #LightLevelTestingThumb {
     background-image: url("https://as2.ftcdn.net/jpg/01/39/31/97/500_F_139319795_EbahL6u7AwcpvUOHxbKUoIYSyvCy1YU6.jpg");
   }
-  #EmergencyExitLightTestingHero #EmergencyExitLightTestingThumb {
+  #EmergencyExitLightTestingHero, #EmergencyExitLightTestingThumb {
     background-image: url("https://as1.ftcdn.net/jpg/02/27/66/52/500_F_227665263_1QjPseAGVdKOzADKHCwJNdCVXeAeHND9.jpg");
   }
   #LightingInstallationsHero, #LightingInstallationsThumb {
@@ -1273,25 +1273,23 @@ footer {
     .services-content-left, .body-content-left {
       flex-direction: row;
       .services-content-img-container, .body-content-img-container {
-        width: 10rem; //tbc
-        height: 10rem; //tbc
-        padding: 1rem;
+        width: 15rem;
+        height: 15rem;
       }
       .services-content-text-container, .body-content-text-container {
         width: calc(100% - 10rem);
-        padding: 1rem;
+        padding: 1rem 1rem 1rem 2rem;
       }
     }
     .services-content-right, .body-content-right {
       flex-direction: row-reverse;
       .services-content-img-container, .body-content-img-container {
-        width: 10rem; //tbc
-        height: 10rem; //tbc
-        padding: 1rem;
+        width: 15rem;
+        height: 15rem;
       }
       .services-content-text-container, .body-content-text-container {
         width: calc(100% - 10rem);
-        padding: 1rem;
+        padding: 1rem 2rem 1rem 1rem;
       }
     }
     .why-tnt {

@@ -491,7 +491,7 @@ main .body-content-right .services-content-img-container,
 main .body-content-right .body-content-img-container {
   width: 90%;
   max-width: 40rem;
-  height: 5rem;
+  height: 15rem;
   background-image: url("../../img/placeholder.png");
   background-position: center;
   background-size: cover;
@@ -796,7 +796,7 @@ main #RcdTestingHero, main #RcdTestingThumb {
 main #LightLevelTestingHero, main #LightLevelTestingThumb {
   background-image: url("https://as2.ftcdn.net/jpg/01/39/31/97/500_F_139319795_EbahL6u7AwcpvUOHxbKUoIYSyvCy1YU6.jpg");
 }
-main #EmergencyExitLightTestingHero #EmergencyExitLightTestingThumb {
+main #EmergencyExitLightTestingHero, main #EmergencyExitLightTestingThumb {
   background-image: url("https://as1.ftcdn.net/jpg/02/27/66/52/500_F_227665263_1QjPseAGVdKOzADKHCwJNdCVXeAeHND9.jpg");
 }
 main #LightingInstallationsHero, main #LightingInstallationsThumb {
@@ -1191,25 +1191,23 @@ header .header-nav .header-nav-main-links > li ul:hover {
     flex-direction: row;
   }
   main .services-content-left .services-content-img-container, main .services-content-left .body-content-img-container, main .body-content-left .services-content-img-container, main .body-content-left .body-content-img-container {
-    width: 10rem;
-    height: 10rem;
-    padding: 1rem;
+    width: 15rem;
+    height: 15rem;
   }
   main .services-content-left .services-content-text-container, main .services-content-left .body-content-text-container, main .body-content-left .services-content-text-container, main .body-content-left .body-content-text-container {
     width: calc(100% - 10rem);
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 2rem;
   }
   main .services-content-right, main .body-content-right {
     flex-direction: row-reverse;
   }
   main .services-content-right .services-content-img-container, main .services-content-right .body-content-img-container, main .body-content-right .services-content-img-container, main .body-content-right .body-content-img-container {
-    width: 10rem;
-    height: 10rem;
-    padding: 1rem;
+    width: 15rem;
+    height: 15rem;
   }
   main .services-content-right .services-content-text-container, main .services-content-right .body-content-text-container, main .body-content-right .services-content-text-container, main .body-content-right .body-content-text-container {
     width: calc(100% - 10rem);
-    padding: 1rem;
+    padding: 1rem 2rem 1rem 1rem;
   }
   main .why-tnt .why-tnt-copy p {
     font-size: 1.15rem;
