@@ -1140,10 +1140,11 @@ header .header-nav .header-nav-main-links > li ul:hover {
   main .services .services-list {
     width: 100%;
     padding: 0;
+    max-width: 50rem;
   }
   main .services .services-list ul {
     max-width: 80rem;
-    padding-left: 12.5rem;
+    margin: auto;
   }
   main .services .services-list ul li {
     width: 50%;
