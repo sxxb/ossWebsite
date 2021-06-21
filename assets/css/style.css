@@ -322,6 +322,7 @@ main .hero .hero-text p {
   font-size: 1.15rem;
   line-height: 1.6em;
   color: #f4f6fb;
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .services .services-title {
   margin: 2rem auto;
@@ -575,6 +576,7 @@ main .why-tnt .why-tnt-copy p {
   line-height: 1.6em;
   margin-bottom: 1rem;
   color: #f4fbf7;
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .why-tnt .why-tnt-button {
   margin: 2rem auto;
@@ -682,6 +684,7 @@ main .oss-promise .oss-promise-copy p {
   line-height: 1.6em;
   margin-bottom: 1rem;
   color: #e2eee7;
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
 }
 main .quote .quote-title {
   margin: 2rem auto;
