@@ -14,21 +14,6 @@ $(document).ready(function() {
 });
 
 //Mobile Menu Dropdown
-// $(document).ready(function() {
-//       $(`header-nav-main-link-top-link`).click(function () {
-//         if($(window).width() < 600) {
-//           event.preventDefault();
-//           $(`.header-nav-main-link-dropdown`)
-//             .siblings(`.header-nav-main-link-dropdown`).children(`.header-nav-main-link-dropdown-list`)
-//             .not($(this).next(`.header-nav-main-link-dropdown-list`))
-//             .slideUp(500).console.log(`this`);
-//
-//           $(`.header-nav-main-link-dropdown`).children(`.header-nav-main-link-dropdown-list`).slideToggle(500);
-//         }
-//         // else if($(window).width() < 600) {}
-//       });
-// });
-
 $(document).ready(function() {
     $(`.header-nav-main-link-top-link`).click(function() {
       if($(window).width() < 600) {
