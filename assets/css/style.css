@@ -421,16 +421,18 @@ main .services-content .services-content-copy ul.contact-list-container li, main
   list-style-type: none;
   font-size: 1.2rem;
   margin: 0.5rem 0;
+  color: #293856;
 }
 main .services-content .services-content-copy ul.contact-list-container li a, main .services-content .body-content-copy ul.contact-list-container li a, main .body-content .services-content-copy ul.contact-list-container li a, main .body-content .body-content-copy ul.contact-list-container li a {
   color: #293856;
+  font-weight: normal;
 }
 main .services-content .services-content-copy ul.contact-list-container li a:hover, main .services-content .services-content-copy ul.contact-list-container li a:hover i, main .services-content .body-content-copy ul.contact-list-container li a:hover, main .services-content .body-content-copy ul.contact-list-container li a:hover i, main .body-content .services-content-copy ul.contact-list-container li a:hover, main .body-content .services-content-copy ul.contact-list-container li a:hover i, main .body-content .body-content-copy ul.contact-list-container li a:hover, main .body-content .body-content-copy ul.contact-list-container li a:hover i {
   color: #31aa62;
 }
 main .services-content .services-content-copy ul.contact-list-container li i, main .services-content .body-content-copy ul.contact-list-container li i, main .body-content .services-content-copy ul.contact-list-container li i, main .body-content .body-content-copy ul.contact-list-container li i {
   margin-right: 1rem;
-  color: #293856;
+  color: #7887a5;
 }
 main .services-content .services-content-copy .faq-item, main .services-content .body-content-copy .faq-item, main .body-content .services-content-copy .faq-item, main .body-content .body-content-copy .faq-item {
   margin-bottom: 3rem;

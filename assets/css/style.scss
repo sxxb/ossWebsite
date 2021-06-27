@@ -456,21 +456,22 @@ main {
       }
       ul.contact-list-container {
         width:max-content;
-
         margin:auto;
         li {
           list-style-type: none;
           font-size:1.2rem;
           margin:0.5rem 0;
+          color:$theme-colour-7b;
           a {
             color:$theme-colour-7b;
+            font-weight:normal;
             &:hover, &:hover i {
               color:$theme-colour-main;
             }
           }
           i {
             margin-right:1rem;
-            color:$theme-colour-7b;
+            color:$theme-colour-6b;
           }
         }
       }
