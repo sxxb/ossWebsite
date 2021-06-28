@@ -177,7 +177,7 @@ header .header-nav .header-nav-main-links > li ul > div li a:hover, header .head
   transition: 0.2s ease;
 }
 header .header-nav .header-nav-main-links > li ul > div li a:hover > span {
-  color: #1e293e;
+  color: #293856;
   transition: 0.2s ease;
 }
 header .header-nav .header-nav-main-links > li ul > div li a i {
@@ -193,7 +193,7 @@ header .header-nav .header-nav-main-links > li ul > div li a span {
   height: 40px;
   font-weight: 400;
   font-size: 0.8rem;
-  color: #1e293e;
+  color: #293856;
 }
 header .header-nav .header-nav-sub-links {
   width: 100%;
@@ -314,13 +314,13 @@ main .services .services-list ul li a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  color: #1e293e;
+  color: #293856;
   width: 100%;
   transition: 0.2s ease;
   font-size: 0.75rem;
 }
 main .services .services-list ul li a:visited {
-  color: #1e293e;
+  color: #293856;
 }
 main .services .services-list ul li a:hover {
   color: #31aa62;
@@ -371,7 +371,7 @@ main .services-content .services-content-copy, main .services-content .body-cont
 main .services-content .services-content-copy p, main .services-content .body-content-copy p, main .body-content .services-content-copy p, main .body-content .body-content-copy p {
   line-height: 1.6em;
   margin-bottom: 1rem;
-  color: #1e293e;
+  color: #293856;
 }
 main .services-content .services-content-copy a, main .services-content .body-content-copy a, main .body-content .services-content-copy a, main .body-content .body-content-copy a {
   font-weight: bold;
@@ -390,7 +390,7 @@ main .services-content .services-content-copy ul.service-dot-points li, main .se
   list-style-type: none;
   padding-top: 1rem;
   padding-bottom: 0.5rem;
-  color: #1e293e;
+  color: #293856;
   font-size: 0.95rem;
   display: flex;
   flex-direction: row;
@@ -421,10 +421,10 @@ main .services-content .services-content-copy ul.contact-list-container li, main
   list-style-type: none;
   font-size: 1.2rem;
   margin: 0.5rem 0;
-  color: #1e293e;
+  color: #293856;
 }
 main .services-content .services-content-copy ul.contact-list-container li a, main .services-content .body-content-copy ul.contact-list-container li a, main .body-content .services-content-copy ul.contact-list-container li a, main .body-content .body-content-copy ul.contact-list-container li a {
-  color: #1e293e;
+  color: #293856;
   font-weight: normal;
 }
 main .services-content .services-content-copy ul.contact-list-container li a:hover, main .services-content .services-content-copy ul.contact-list-container li a:hover i, main .services-content .body-content-copy ul.contact-list-container li a:hover, main .services-content .body-content-copy ul.contact-list-container li a:hover i, main .body-content .services-content-copy ul.contact-list-container li a:hover, main .body-content .services-content-copy ul.contact-list-container li a:hover i, main .body-content .body-content-copy ul.contact-list-container li a:hover, main .body-content .body-content-copy ul.contact-list-container li a:hover i {
@@ -432,7 +432,7 @@ main .services-content .services-content-copy ul.contact-list-container li a:hov
 }
 main .services-content .services-content-copy ul.contact-list-container li i, main .services-content .body-content-copy ul.contact-list-container li i, main .body-content .services-content-copy ul.contact-list-container li i, main .body-content .body-content-copy ul.contact-list-container li i {
   margin-right: 1rem;
-  color: #1e293e;
+  color: #293856;
 }
 main .services-content .services-content-copy .faq-item, main .services-content .body-content-copy .faq-item, main .body-content .services-content-copy .faq-item, main .body-content .body-content-copy .faq-item {
   margin-bottom: 3rem;
@@ -441,7 +441,7 @@ main .services-content .services-content-copy .faq-item:first-of-type, main .ser
   margin-top: 1rem;
 }
 main .services-content .services-content-copy .faq-item h4, main .services-content .body-content-copy .faq-item h4, main .body-content .services-content-copy .faq-item h4, main .body-content .body-content-copy .faq-item h4 {
-  color: #1e293e;
+  color: #293856;
   font-size: 1.5rem;
 }
 main .services-content .services-content-copy .faq-item p, main .services-content .body-content-copy .faq-item p, main .body-content .services-content-copy .faq-item p, main .body-content .body-content-copy .faq-item p {
@@ -914,7 +914,7 @@ footer .footer-copyright h6 {
     display: flex;
     flex-direction: row;
     background: #b9e4ca;
-    color: #1e293e;
+    color: #293856;
     margin-top: 0.3rem;
     padding-right: 0.25rem;
   }
@@ -992,7 +992,7 @@ footer .footer-copyright h6 {
   }
   header .header-nav .header-nav-main-links > li:hover {
     color: #e2eee7;
-    background: #1e293e;
+    background: #31aa62;
   }
   header .header-nav .header-nav-main-links > li > a,
 header .header-nav .header-nav-main-links > li > a:visited,
@@ -1014,7 +1014,7 @@ header .header-nav .header-nav-main-links > li > a:hover {
     left: 0%;
     width: 100%;
     box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
-    background: #1e293e;
+    background: #1b1f27;
     padding: 0.5rem 0;
     transition: 0.5s ease;
   }
@@ -1359,7 +1359,7 @@ main.home .other {
   }
   footer .footer-content .footer-content-about form input[type=text],
 footer .footer-content .footer-content-about form input[type=email] {
-    background: #7887a5;
+    background: #293856;
     color: #cdd5e4;
     padding: 0.4em 0.6em;
     margin-bottom: 0.5em;
