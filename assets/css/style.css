@@ -992,7 +992,7 @@ footer .footer-copyright h6 {
   }
   header .header-nav .header-nav-main-links > li:hover {
     color: #e2eee7;
-    background: #1b1f27;
+    background: #1e293e;
   }
   header .header-nav .header-nav-main-links > li > a,
 header .header-nav .header-nav-main-links > li > a:visited,
@@ -1014,7 +1014,7 @@ header .header-nav .header-nav-main-links > li > a:hover {
     left: 0%;
     width: 100%;
     box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
-    background: #1b1f27;
+    background: #1e293e;
     padding: 0.5rem 0;
     transition: 0.5s ease;
   }
@@ -1359,7 +1359,7 @@ main.home .other {
   }
   footer .footer-content .footer-content-about form input[type=text],
 footer .footer-content .footer-content-about form input[type=email] {
-    background: #1e293e;
+    background: #7887a5;
     color: #cdd5e4;
     padding: 0.4em 0.6em;
     margin-bottom: 0.5em;
