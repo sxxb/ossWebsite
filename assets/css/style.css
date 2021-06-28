@@ -432,7 +432,7 @@ main .services-content .services-content-copy ul.contact-list-container li a:hov
 }
 main .services-content .services-content-copy ul.contact-list-container li i, main .services-content .body-content-copy ul.contact-list-container li i, main .body-content .services-content-copy ul.contact-list-container li i, main .body-content .body-content-copy ul.contact-list-container li i {
   margin-right: 1rem;
-  color: #7887a5;
+  color: #293856;
 }
 main .services-content .services-content-copy .faq-item, main .services-content .body-content-copy .faq-item, main .body-content .services-content-copy .faq-item, main .body-content .body-content-copy .faq-item {
   margin-bottom: 3rem;
@@ -992,7 +992,7 @@ footer .footer-copyright h6 {
   }
   header .header-nav .header-nav-main-links > li:hover {
     color: #e2eee7;
-    background: #1d2620;
+    background: #437055;
   }
   header .header-nav .header-nav-main-links > li > a,
 header .header-nav .header-nav-main-links > li > a:visited,
@@ -1014,7 +1014,7 @@ header .header-nav .header-nav-main-links > li > a:hover {
     left: 0%;
     width: 100%;
     box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
-    background: #1d2620;
+    background: #437055;
     padding: 0.5rem 0;
     transition: 0.5s ease;
   }
