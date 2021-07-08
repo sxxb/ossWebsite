@@ -1227,7 +1227,12 @@ header .header-nav .header-nav-main-links > li ul:hover {
     width: 15rem;
     height: 15rem;
   }
-  main .services-content-left .services-content-text-container, main .services-content-left .body-content-text-container, main .body-content-left .services-content-text-container, main .body-content-left .body-content-text-container {
+  main .services-content-left .services-content-text-container, main .body-content-left .services-content-text-container {
+    width: calc(100% - 10rem);
+    padding: 1rem 1rem 1rem 2rem;
+    max-width: 50rem;
+  }
+  main .services-content-left .body-content-text-container, main .body-content-left .body-content-text-container {
     width: calc(100% - 10rem);
     padding: 1rem 1rem 1rem 2rem;
   }
