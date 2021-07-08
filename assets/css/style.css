@@ -255,7 +255,7 @@ main .hero .hero-image {
 main .hero .hero-image h2 {
   color: white;
   text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13), 0 0 5vh rgba(0, 0, 0, 0.25), 0 5px 15px rgba(33, 33, 33, 0.25);
-  font-size: 2.5rem;
+  font-size: 2rem;
   background-color: rgba(29, 38, 32, 0.85);
   padding: 0.1rem 0.4em 0.2rem;
   margin: 0 auto;
