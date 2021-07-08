@@ -390,12 +390,14 @@ main {
       }
       h3 {
         font-size:1.5rem;
+        text-align:center;
         color: $theme-colour-8b;
       }
     }
     .services-content-copy, .body-content-copy {
       width: 90%;
       max-width: 40rem;
+      margin:auto;
       p {
         line-height: 1.6em;
         margin-bottom: 1rem;
@@ -1289,6 +1291,15 @@ footer {
       margin:5rem auto;
       .services-content-title, .body-content-title {
         margin-top:0;
+      }
+      .services-content-text-container {
+        width: calc(100% - 10rem);
+        padding: 1rem 1rem 1rem 2rem;
+        max-width:50rem;
+      }
+      .body-content-text-container {
+        width: calc(100% - 10rem);
+        padding: 1rem 1rem 1rem 2rem;
       }
     }
     .services-content-left, .body-content-left {
