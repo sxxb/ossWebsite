@@ -1,3 +1,11 @@
+//jquery includes
+$(function(){
+  $("#nav").load("partials/nav.html");
+  $("#contactForm").load("partials/contact.html");
+  $("#footer").load("partials/footer.html");
+  console.log('hello world');
+});
+
 //Mobile Menu Open
 $(document).ready(function() {
   $(`#menuTrigger`).click(function() {
