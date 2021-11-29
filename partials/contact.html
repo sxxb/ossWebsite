@@ -5,12 +5,12 @@
   <form action="">
     <div>
       <fieldset>
-        <input type="text" placeholder="Name" name="name" required>
-        <input type="text" placeholder="Business Name" name="businessName" required>
-        <input type="text" placeholder="Address" name="address" required>
-        <input type="tel" placeholder="Phone" name="phone" required>
-        <input type="email" placeholder="Email" name="email" required>
-        <select name="hearAbout" required>
+        <input type="text" id="quoteFormName" placeholder="Name" name="name" required>
+        <input type="text" id="quoteFormBusinessName" placeholder="Business Name" name="businessName" required>
+        <input type="text" id="quoteFormAddress" placeholder="Address" name="address" required>
+        <input type="tel"  id="quoteFormPhone"placeholder="Phone" name="phone" required>
+        <input type="email"  id="quoteFormEmail" placeholder="Email" name="email" required>
+        <select id="quoteFormHearAbout" name="hearAbout" required>
           <option value="" class="option-placeholder" disabled selected>How did you hear about OSS?</option>
           <option value="Business Contact">Business Contact</option>
           <option value="Google Search">Google Search</option>
@@ -27,7 +27,7 @@
         </select>
       </fieldset>
       <fieldset>
-        <select name="enquiryType" required>
+        <select id="quoteFormEnquiryType" name="enquiryType" required>
           <option value="" class="option-placeholder" disabled selected>Service Required</option>
           <option value="Service Visit">Service Visit</option>
           <option value="Appliance Testing">Appliance Testing</option>
@@ -39,7 +39,7 @@
           <option value="Solar Panel Installations">Solar Panel Installations</option>
           <option value="Others">Others</option>
         </select>
-        <textarea name="quoteRequest" rows="5" placeholder="Quote Request Description"></textarea>
+        <textarea id="quoteFormQuoteRequest" name="quoteRequest" rows="5" placeholder="Quote Request Description"></textarea>
         <span class="captcha-container">
           <span class="captcha">A1B2C3</span>
           <input type="text" placeholder="Captcha" name="">

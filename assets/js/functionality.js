@@ -26,6 +26,14 @@ $(function(){
        $(`body`).css({'overflow': 'auto'});
        }
      });
+     $(function() {
+       $("#searchField").on("Keyup", function() {
+         var searchTerm = $(this).val().toLowerCase();
+         $("#searchList li").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
   });
   $("#contactForm").load("partials/contact.html", );
   $("#footer").load("partials/footer.html");
