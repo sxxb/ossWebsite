@@ -975,6 +975,8 @@ footer {
             color: $theme-colour-7b;
             margin-top: 0.3rem;
             padding-right: 0.25rem;
+            align-items:center;
+            width:12rem;
             input[type="text"] {
               width: 90%;
               background: none;
@@ -989,14 +991,24 @@ footer {
             }
             div {
               position:relative;
-              width:100%;
               display:inline-block;
               ul {
                 // display:none;
+                position:absolute;
+                width:12rem;
                 background:$theme-colour-1;
                 box-shadow:$theme-shadow-1, $theme-shadow-2;
+
+                z-index:10;
                 li {
                   list-style-type: none;
+                  a {
+                    padding:0.5rem;
+                    font-size:0.9rem;
+                    &:hover {
+                      background:$theme-colour-3;
+                    }
+                  }
                 }
               }
             }
