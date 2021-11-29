@@ -959,11 +959,16 @@ footer .footer-copyright h6 {
     padding: 0.5rem;
     font-family: azo-sans-web, sans-serif;
   }
-  header .header-content .header-content-other .header-content-search form button[type=submit] {
+  header .header-content .header-content-other .header-content-search form i {
     width: 10%;
     background: none;
     padding: 0rem;
     color: #31aa62;
+  }
+  header .header-content .header-content-other .header-content-search form div {
+    position: relative;
+    width: 100%;
+    display: inline-block;
   }
   header .header-content .header-content-other .header-content-contact {
     text-align: center;

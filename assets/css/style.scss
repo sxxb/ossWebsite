@@ -981,11 +981,20 @@ footer {
               padding: 0.5rem;
               font-family: $theme-font;
             }
-            button[type="submit"] {
+            i {
               width: 10%;
               background: none;
               padding: 0rem;
               color: $theme-colour-main;
+            }
+            div {
+              position:relative;
+              width:100%;
+              display:inline-block;
+              ul#searchList {
+                // display:none;
+
+              }
             }
           }
         }
