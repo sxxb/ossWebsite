@@ -981,6 +981,7 @@ footer .footer-copyright h6 {
     z-index: 10;
   }
   header .header-content .header-content-other .header-content-search form div ul li {
+    display: none;
     list-style-type: none;
   }
   header .header-content .header-content-other .header-content-search form div ul li a {

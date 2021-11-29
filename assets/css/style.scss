@@ -994,15 +994,14 @@ footer {
               position:relative;
               display:inline-block;
               ul {
-                // display:none;
                 position:absolute;
                 margin-top:1rem;
                 width:12rem;
                 background:$theme-colour-1;
                 box-shadow:$theme-shadow-1, $theme-shadow-2;
-
                 z-index:10;
                 li {
+                  display:none;
                   list-style-type: none;
                   a {
                     display:flex;
