@@ -991,9 +991,13 @@ footer {
               position:relative;
               width:100%;
               display:inline-block;
-              ul#searchList {
+              ul {
                 // display:none;
-
+                background:$theme-color-1;
+                box-shadow:$theme-shadow-1, $theme-shadow-2;
+                li {
+                  list-style-type: none;
+                }
               }
             }
           }
