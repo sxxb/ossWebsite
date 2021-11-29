@@ -26,7 +26,7 @@ $(function(){
        $(`body`).css({'overflow': 'auto'});
        }
      });
-     $("#searchField").on("Keyup", function() {
+     $("#searchField").on("keyup", function() {
        var searchTerm = $(this).val().toLowerCase();
        $("#searchList li").filter(function() {
          $(this).toggle($(this).text().toLowerCase().indexOf(searchTerm) > -1)
