@@ -30,7 +30,7 @@ $(function(){
        $("#searchField").on("Keyup", function() {
          var searchTerm = $(this).val().toLowerCase();
          $("#searchList li").filter(function() {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+          $(this).toggle($(this).text().toLowerCase().indexOf(searchTerm) > -1)
         });
       });
     });
