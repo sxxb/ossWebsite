@@ -977,6 +977,7 @@ footer {
             padding-right: 0.25rem;
             align-items:center;
             width:12rem;
+            height:2rem;
             input[type="text"] {
               width: 90%;
               background: none;
@@ -995,6 +996,7 @@ footer {
               ul {
                 // display:none;
                 position:absolute;
+                margin-top:1rem;
                 width:12rem;
                 background:$theme-colour-1;
                 box-shadow:$theme-shadow-1, $theme-shadow-2;
@@ -1003,10 +1005,11 @@ footer {
                 li {
                   list-style-type: none;
                   a {
-                    padding:0.5rem;
+                    display:flex;
+                    padding:0.75rem 0.5rem;
                     font-size:0.9rem;
                     &:hover {
-                      background:$theme-colour-3;
+                      background:$theme-colour-4;
                     }
                   }
                 }

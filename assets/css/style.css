@@ -954,6 +954,7 @@ footer .footer-copyright h6 {
     padding-right: 0.25rem;
     align-items: center;
     width: 12rem;
+    height: 2rem;
   }
   header .header-content .header-content-other .header-content-search form input[type=text] {
     width: 90%;
@@ -973,6 +974,7 @@ footer .footer-copyright h6 {
   }
   header .header-content .header-content-other .header-content-search form div ul {
     position: absolute;
+    margin-top: 1rem;
     width: 12rem;
     background: #f4fbf7;
     box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13), 0 0 5vh rgba(0, 0, 0, 0.25), 0 5px 15px rgba(33, 33, 33, 0.25);
@@ -982,11 +984,12 @@ footer .footer-copyright h6 {
     list-style-type: none;
   }
   header .header-content .header-content-other .header-content-search form div ul li a {
-    padding: 0.5rem;
+    display: flex;
+    padding: 0.75rem 0.5rem;
     font-size: 0.9rem;
   }
   header .header-content .header-content-other .header-content-search form div ul li a:hover {
-    background: #c2f0d4;
+    background: #b9e4ca;
   }
   header .header-content .header-content-other .header-content-contact {
     text-align: center;
