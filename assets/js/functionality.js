@@ -33,7 +33,7 @@ $(function(){
        });
      });
      $("#searchField").focusout(function() {
-       $("#searchList li").hide();
+       $("#searchList li").delay(500).hide();
     });
     $("#searchField").focusin(function() {
       var searchTerm = $(this).val().toLowerCase();
