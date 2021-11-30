@@ -2,7 +2,7 @@
   <h2>Get a Quote</h2>
 </div>
 <div class="quote-form">
-  <form action="">
+  <form id="contactForm" action="" method="POST">
     <div>
       <fieldset>
         <input type="text" id="quoteFormName" placeholder="Name" name="name" required>
@@ -39,14 +39,21 @@
           <option value="Solar Panel Installations">Solar Panel Installations</option>
           <option value="Others">Others</option>
         </select>
-        <textarea id="quoteFormQuoteRequest" name="quoteRequest" rows="5" placeholder="Quote Request Description"></textarea>
-        <span class="captcha-container">
+        <textarea id="quoteFormQuoteRequest" name="quoteRequest" rows="6" placeholder="Quote Request Description"></textarea>
+        <!-- <span class="captcha-container">
           <span class="captcha">A1B2C3</span>
           <input type="text" placeholder="Captcha" name="">
-        </span>
+        </span> -->
       </fieldset>
     </div>
     <div>
-      <input type="submit" value="Request Quote">
+      <input
+        type="submit"
+        value="Request Quote"
+        class="g-recaptcha"
+        data-sitekey="6LcDGGodAAAAAPh66Ioy4kdhL1iDDf_iXAE1GZpP"
+        data-callback="onSubmit"
+        data-action="submit"
+        >
     </div>
   </form>

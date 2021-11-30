@@ -6,6 +6,9 @@ $(function(){
     '<meta name="googlebot" content="index,follow">',
     '<script type="text/javascript" src="https://kit.fontawesome.com/570433b2eb.js"></script>',
     '<link rel="shortcut icon" type="image/png" href="img/favicon.ico" />'
+   }
+ </script>
+'
   );
   $("#nav").load("partials/nav.html", function() {
     $(`#menuTrigger`).click(function() {
@@ -57,8 +60,12 @@ $(function(){
     }
    });
   });
-  $("#contactForm").load("partials/contact.html", function() {
-
-  });
+  $("#contactFormContainer").load("partials/contact.html", function() {
+    $(`head`).append(
+      '<script src="https://www.google.com/recaptcha/api.js"></script>',
+      '<script>function onSubmit(token) {document.getElementById("contactForm").submit();'
+    );
+  }
+);
   $("#footer").load("partials/footer.html");
 });
