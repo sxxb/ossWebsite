@@ -1,9 +1,10 @@
 $(function(){
   $(`head`).append(
+
     '<meta name="theme-color" content="#31aa62"><meta name="description" content="OSS provide Electrical Testing and Other Safety Services to South Australia.">',
     '<meta name="robots" content="index,follow">',
     '<meta name="googlebot" content="index,follow">',
-    '<link rel="stylesheet" href="assets/css/style.css" />',
+    '<script type="text/javascript" src="https://kit.fontawesome.com/570433b2eb.js"></script>',
     '<link rel="shortcut icon" type="image/png" href="img/favicon.ico" />'
   );
   $("#nav").load("partials/nav.html", function() {
