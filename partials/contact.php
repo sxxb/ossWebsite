@@ -78,7 +78,7 @@
                       "Email: $contactEmail.\n".
                       "Enquiry Type: $contactEnquiryType.\n".
                       "Message: $contactQuoteRequest.\n".
-                      "This person heard about OSS from: $contactHearAbout.\n".
+                      "This person heard about OSS from: $contactHearAbout.\n";
         $email_to = "";
         $headers = "From: $email_form /r/n";
         $headers .= "Reply-To: $contactEmail /r/n";
