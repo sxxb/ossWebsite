@@ -37,7 +37,7 @@ $(function(){
     // });
     $("#searchField").focusout(function() {
       if ($("#searchField").parent().contents().not(':focus)')) {
-        
+        console.log('you clicked somewhere else');
     }
     else {
       $("#searchList li").hide();
