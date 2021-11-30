@@ -32,8 +32,8 @@ $(function(){
          $(this).toggle($(this).text().toLowerCase().indexOf(searchTerm) > -1)
        });
      });
-     $("#searchField").focusout(function() {
-       $("#searchList li").delay(500).hide();
+     $("#searchField").parent().focusout(function() {
+       $("#searchList li").hide();
     });
     $("#searchField").focusin(function() {
       var searchTerm = $(this).val().toLowerCase();
