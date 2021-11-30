@@ -37,7 +37,7 @@ $(function(){
     });
     $("#searchField").focusin(function() {
       var searchTerm = $(this).val().toLowerCase();
-      if (searchTerm.val() != '') {
+      if (searchTerm != '') {
       $("#searchList li").filter(function() {
         $(this).toggle($(this).text().toLowerCase().indexOf(searchTerm) > -1)
       });
