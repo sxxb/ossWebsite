@@ -32,9 +32,18 @@ $(function(){
          $(this).toggle($(this).text().toLowerCase().indexOf(searchTerm) > -1)
        });
      });
-     $("#searchField").parent().contents().focusout(function() {
-       $("#searchList li").hide();
-    });
+    //  $("#searchField").parent().contents().focusout(function() {
+    //    $("#searchList li").hide();
+    // });
+    $("#searchField").focusout(function() {
+      if ($("#searchField").parent().contents().not(':focus)')) {
+        
+    }
+    else {
+      $("#searchList li").hide();
+    }
+  });
+
     $("#searchField").focusin(function() {
       var searchTerm = $(this).val().toLowerCase();
       if (searchTerm != '') {
