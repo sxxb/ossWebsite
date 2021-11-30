@@ -1,4 +1,7 @@
 $(function(){
+  $('head').appendChild(
+    '<meta name="theme-color" content="#31aa62"><meta name="description" content="OSS provide Electrical Testing and Other Safety Services to South Australia."><meta name="robots" content="index,follow"><meta name="googlebot" content="index,follow"><link rel="stylesheet" href="assets/css/style.css" /><link rel="shortcut icon" type="image/png" href="img/favicon.ico" />'
+  );  
   $("#nav").load("partials/nav.html", function() {
     $(`#menuTrigger`).click(function() {
       if ($(window).width() < 600) {
@@ -6,12 +9,12 @@ $(function(){
         $(`body`).css({'overflow': 'hidden'});
       }
      });
-     $(`#menuExit`).click(function() {
+    $(`#menuExit`).click(function() {
        $(`.header-nav`).removeClass(`header-nav-open`).addClass(`header-nav-closed`);
        $(`.header-nav-main-link-dropdown-list`).removeAttr("style");
        $(`body`).css({'overflow': 'auto'});
      });
-     $(`.header-nav-main-link-top-link`).click(function() {
+    $(`.header-nav-main-link-top-link`).click(function() {
        if($(window).width() < 600) {
          event.preventDefault();
          $(`.header-nav-main-link-top-link`).siblings(`.header-nav-main-link-dropdown-list`)
@@ -20,21 +23,18 @@ $(function(){
          $(this).next(`.header-nav-main-link-dropdown-list`).slideToggle(500);
        }
      });
-     $(window).resize(function() {
+    $(window).resize(function() {
        if ($(window).width() >= 600) {
        $(`.header-nav-main-link-dropdown-list`).removeAttr("style");
        $(`body`).css({'overflow': 'auto'});
        }
      });
-     $("#searchField").on("keyup", function() {
+    $("#searchField").on("keyup", function() {
        var searchTerm = $(this).val().toLowerCase();
        $("#searchList li").filter(function() {
          $(this).toggle($(this).text().toLowerCase().indexOf(searchTerm) > -1)
        });
      });
-    //  $("#searchField").parent().contents().focusout(function() {
-    //    $("#searchList li").hide();
-    // });
     $("#searchField").focusout(function() {
       if ($("#searchField").parent().contents().not(':focus')) {
 
@@ -43,7 +43,6 @@ $(function(){
       $("#searchList li").hide();
     }
   });
-
     $("#searchField").focusin(function() {
       var searchTerm = $(this).val().toLowerCase();
       if (searchTerm != '') {
@@ -53,6 +52,8 @@ $(function(){
     }
    });
   });
-  $("#contactForm").load("partials/contact.html", );
+  $("#contactForm").load("partials/contact.html", function() {
+
+  });
   $("#footer").load("partials/footer.html");
 });
