@@ -37,7 +37,7 @@ $(function(){
     // });
     $("#searchField").focusout(function() {
       if ($("#searchField").parent().contents().not(':focus')) {
-        console.log('you clicked somewhere else');
+
     }
     else {
       $("#searchList li").hide();
@@ -55,5 +55,4 @@ $(function(){
   });
   $("#contactForm").load("partials/contact.html", );
   $("#footer").load("partials/footer.html");
-  console.log('hello world');
 });
