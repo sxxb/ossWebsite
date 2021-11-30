@@ -956,7 +956,8 @@ footer .footer-copyright h6 {
     width: 12rem;
     height: 2rem;
   }
-  header .header-content .header-content-other .header-content-search input[type=text] {
+  header .header-content .header-content-other .header-content-search span {
+    display: flex;
     width: 90%;
     background: none;
     padding: 0.5rem;

@@ -977,7 +977,8 @@ footer {
           align-items:center;
           width:12rem;
           height:2rem;
-          input[type="text"] {
+          span {
+            display:flex;
             width: 90%;
             background: none;
             padding: 0.5rem;
