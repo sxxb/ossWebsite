@@ -59,7 +59,7 @@ $(function(){
   $("#contactFormContainer").load("partials/contact.html", function() {
     $(`head`).append(
       '<script src="https://www.google.com/recaptcha/api.js"></script>',
-      '<script>function onSubmit(token) {document.getElementById("contactForm").submit();</script>'
+      '<script>function onSubmit(token) {document.getElementById("contactForm").submit();}</script>'
     );
   }
 );
