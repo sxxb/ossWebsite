@@ -5,8 +5,9 @@
     </a>
     <div class="header-content-other">
       <div class="header-content-search">
-        <div>
-          <ul id="searchList">
+        <form action="javascript:void(0);"> <!--This prevents the page from reloading when you hit enter - the search field provides results as a dropdown menu only -->
+          <div>
+            <ul id="searchList">
             <li>
               <a href="testingandsafety\testingandtagging\">Appliance Testing and Tagging</a>
               </li>
@@ -61,10 +62,12 @@
             <li>
               <a href="terms\">Terms and Conditions</a>
             </li>
-          </ul>
-        </div>
-        <span id="searchField" contenteditable autocomplete="off" />
-        <i class="fa fa-search"></i>
+            </ul>
+            </div>
+          <input id="searchField" type="text" placeholder="" autocomplete="off" />
+          <i class="fa fa-search"></i>
+
+        </form>
       </div>
       <div class="header-content-contact">
         <h4>Contact Us</h4>
