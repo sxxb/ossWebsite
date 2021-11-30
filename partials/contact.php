@@ -92,7 +92,7 @@
         $response = file_get_contents($url);
         $response = json_decode($response);
 
-        if ($response->succcess)
+        if ($response->success)
         {
           mail($email_to, $email_subject, $email_body, $headers);
           echo "Quote Request Sent Successfully";
