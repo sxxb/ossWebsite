@@ -32,7 +32,7 @@ $(function(){
          $(this).toggle($(this).text().toLowerCase().indexOf(searchTerm) > -1)
        });
      });
-     $("#searchField").parent().focusout(function() {
+     $("#searchField").parent().contents().focusout(function() {
        $("#searchList li").hide();
     });
     $("#searchField").focusin(function() {
