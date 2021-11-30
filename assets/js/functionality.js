@@ -32,6 +32,9 @@ $(function(){
          $(this).toggle($(this).text().toLowerCase().indexOf(searchTerm) > -1)
        });
      });
+     $("#searchField").focusout(function() {
+       $("#searchList li").hide().
+    });
   });
   $("#contactForm").load("partials/contact.html", );
   $("#footer").load("partials/footer.html");
