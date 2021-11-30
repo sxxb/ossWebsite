@@ -33,7 +33,7 @@ $(function(){
        });
      });
      $("#searchField").focusout(function() {
-       $("#searchList li").hide().
+       $("#searchList li").hide();
     });
   });
   $("#contactForm").load("partials/contact.html", );
