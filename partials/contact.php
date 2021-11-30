@@ -78,8 +78,7 @@
                       "Email: $contactEmail.\n".
                       "Enquiry Type: $contactEnquiryType.\n".
                       "Message: $contactQuoteRequest.\n".
-
-                      "Contact Name: $contactHearAbout.\n".
+                      "This person heard about OSS from: $contactHearAbout.\n".
         $email_to = "";
         $headers = "From: $email_form /r/n";
         $headers .= "Reply-To: $contactEmail /r/n";
@@ -87,7 +86,8 @@
         $secretKey = "6LcDGGodAAAAAAn1yEZKDMkKn2kUoZZMRTyln0nr";
         $responseKey = $_POST['g-recaptcha-response'];
         $UserIP = $_SERVER['REMOTE_ADDR'];
-        $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responeKey&remoteIP=$UserIP";
+        $url = "https://www.google.com/recaptcha/api/siteverify?
+        secret=$secretKey&response=$responseKey&remoteIP=$UserIP";
 
         $response = file_get_contents($url);
         $response = json_decode($response);
@@ -100,8 +100,6 @@
         else {
           echo "Oops, please try again";
         }
-
-
       }
     ?>
   </form>
