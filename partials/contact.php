@@ -81,7 +81,7 @@
                       "This person heard about OSS from: $contactHearAbout.\n";
         $email_to = "";
         $headers = "From: $email_form /r/n";
-        $headers .= "Reply-To: $contactEmail /r/n";
+        $headers = "Reply-To: $contactEmail /r/n";
 
         $secretKey = "6LcDGGodAAAAAAn1yEZKDMkKn2kUoZZMRTyln0nr";
         $responseKey = $_POST['g-recaptcha-response'];
