@@ -35,6 +35,14 @@ $(function(){
      $("#searchField").focusout(function() {
        $("#searchList li").hide();
     });
+    $("#searchField").focusin(function() {
+      var searchTerm = $(this).val().toLowerCase();
+      if (searchTerm.val() != '') {
+      $("#searchList li").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(searchTerm) > -1)
+      });
+    }
+   });
   });
   $("#contactForm").load("partials/contact.html", );
   $("#footer").load("partials/footer.html");
