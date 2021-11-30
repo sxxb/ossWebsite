@@ -5,7 +5,7 @@ $(function(){
     '<meta name="robots" content="index,follow">',
     '<meta name="googlebot" content="index,follow">',
     '<script type="text/javascript" src="https://kit.fontawesome.com/570433b2eb.js"></script>',
-    '<link rel="shortcut icon" type="image/png" href="img/favicon.ico" />'
+    '<link rel="shortcut icon" type="image/png" href="img/favicon.ico" />')
    }
  </script>
 '
