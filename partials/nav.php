@@ -90,7 +90,7 @@
       </div>
     </div>
     <ul class="header-nav-main-links">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="">Home</a></li>
       <li class="header-nav-main-link-dropdown">
         <a class="header-nav-main-link-top-link" href="testingandsafety\">
           <span>Testing & Safety</span>
