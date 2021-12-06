@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="https://sxxb.github.io/ossWebsite/" target="_self">
-
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/functionality.js"></script>
-  <title>OSS</title>
+    <?php include ('partials/headmatter.php'); ?>
+    <title>OSS</title>
   </head>
   <body>
-    <header id="nav">
-
-      </header>
+    <header><?php include ('partials/nav.php'); ?>
+    </header>
     <main class="home">
       <div class="main-section hero" >
         <div class="hero-image" id="HomePageHero"></div>
@@ -167,12 +160,13 @@
           <p>We know the importance of safety and security when we enter your workplace. All our technicians hold full police clearances and can carry out risk assessments, job safety analyses and site inductions on site as needed. At OSS Electrical we are dedicated to ensuring all our work is completed professionally and to the high standards our customers expect.</p>
         </div>
       </div>
-      <div class="main-section quote" id="contactFormContainer">
+      <div class="main-section quote">
+        <?php include ('partials/contact.php'); ?>
       </div>
       <div class="main-section other"></div>
       </main>
-      <footer id="footer">
-
-        </footer>
+    <footer>
+      <?php include ('partials/footer.php'); ?>
+      </footer>
   </body>
 </html>

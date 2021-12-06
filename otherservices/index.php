@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="https://sxxb.github.io/ossWebsite/" target="_self">
-
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/functionality.js"></script>
-
+    <?php include (dirname(__DIR__) . '/./partials/headmatter.php'); ?>
   <title>OSS - Other Services</title>
   </head>
   <body>
-    <header id="nav">
+    <header><?php include (dirname(__DIR__) . '/./partials/nav.php'); ?>
 
       </header>
     <main class="category">
@@ -65,7 +58,7 @@
       </div>
 
       </main>
-      <footer id="footer">
+      <footer><?php include (dirname(__DIR__) . '/./partials/footer.php'); ?>
 
         </footer>
   </body>

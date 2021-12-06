@@ -1,4 +1,6 @@
-  <div class="footer-content">
+<?php
+ echo '
+   <div class="footer-content">
     <div class="footer-content-contact">
       <div>
         <h4>OSS</h4>
@@ -39,16 +41,18 @@
         <h4>About Us</h4>
         <p>Established in 1996, OSS Electrical provides professional and reliable electrical safety services to South Australian businesses, government departments and educations institutions.</p>
       </div>
-      <div>
+      <!-- <div>
         <h4>Subscribe to our Newsletter</h4>
         <form action="">
           <input type="text" placeholder="Name" />
           <input type="email" placeholder="Email" />
           <input type="submit" value="Subscribe" />
         </form>
-      </div>
+      </div> -->
     </div>
   </div>
   <div class="footer-copyright">
     <h6>OSS Electrical &copy;2021</h6>
   </div>
+'
+?>

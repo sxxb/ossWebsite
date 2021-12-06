@@ -1,4 +1,6 @@
-  <div class="header-content">
+<?php
+ echo '
+   <div class="header-content">
     <a class="header-content-logo" href="">
       <div class="header-content-logo-img"></div>
       <h1>OSS</h1>
@@ -142,3 +144,5 @@
       <a href="terms\">Terms & Conditions</a>
     </div>
   </nav>
+';
+?>
