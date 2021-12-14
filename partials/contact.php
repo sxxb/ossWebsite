@@ -1,4 +1,74 @@
 <?php
+if ($_POST) {
+  $contactName = "";
+  $contactBusinessName = "";
+  $contactAddress = "";
+  $contactPhone = "";
+  $contactEmail = "";
+  $contactHearAbout = "";
+  $contactEnquiryType = "";
+  $contactQuoteRequest = "";
+
+  if(isset($_POST['contactName'])) {
+    $contactName = filter_var($_POST['contactName'], FILTER_SANITIZE_STRING);
+  }
+  if(isset($_POST['contactBusinessName'])) {
+    $contactBusinessName = filter_var($_POST['contactBusinessName'], FILTER_SANITIZE_STRING);
+  }
+  if(isset($_POST['contactAddress'])) {
+    $contactAddress = filter_var($_POST['contactAddress'], FILTER_SANITIZE_STRING);
+  }
+  if(isset($_POST['contactPhone'])) {
+    $contactPhone = filter_var($_POST['contactPhone'], FILTER_SANITIZE_STRING);
+  }
+  if(isset($_POST['contactHearAbout'])) {
+    $contactHearAbout = filter_var($_POST['contactHearAbout'], FILTER_SANITIZE_STRING);
+  }
+  if(isset($_POST['contactEnquiryType'])) {
+    $contactEnquiryType = filter_var($_POST['contactEnquiryType'], FILTER_SANITIZE_STRING);
+  }
+  if(isset($_POST['contactQuoteRequest'])) {
+    $contactQuoteRequest = htmlspecialchars($_POST['contactQuoteRequest']);
+  }
+  if(isset($_POST['contactEmail'])) {
+      $contactEmail = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['contactEmail']);
+      $contactEmail = filter_var($contactEmail, FILTER_VALIDATE_EMAIL);
+    }
+
+  $email_from  = 'quoterequest@occsafetyservices.com.au';
+  $email_subject = "Quote Request - $contactBusinessName";
+  $email_body = "Contact Name: $contactName.\n".
+                "Business: $contactBusinessName.\n".
+                "Address: $contactAddress.\n".
+                "Phone: $contactPhone.\n".
+                "Email: $contactEmail.\n".
+                "Enquiry Type: $contactEnquiryType.\n".
+                "Message: $contactQuoteRequest.\n".
+                "This person heard about OSS from: $contactHearAbout.\n";
+  $email_to = "graphics@wavecom.com.au";
+
+  $headers  = 'From: ' . $email_from . "\r\n" .
+              'Reply-To ' . $contactEmail;
+
+  // $secretKey = "6LcDGGodAAAAAAn1yEZKDMkKn2kUoZZMRTyln0nr";
+  // $responseKey = $_POST['g-recaptcha-response'];
+  // $UserIP = $_SERVER['REMOTE_ADDR'];
+  // $url = "https://www.google.com/recaptcha/api/siteverify?
+  // secret=$secretKey&response=$responseKey&remoteIP=$UserIP";
+
+  // $response = file_get_contents($url);
+  // $response = json_decode($response);
+
+  // if ($response->success)
+  // {
+    mail($email_to, $email_subject, $email_body, $headers);
+    echo "Quote Request Sent Successfully";
+  // }
+  // else {
+  //   echo "Oops, please try again";
+  // }
+};
+
  echo '
 <div class="quote-title">
   <h2>Get a Quote</h2>
@@ -42,10 +112,6 @@
           <option value="Others">Others</option>
         </select>
         <textarea id="quoteFormQuoteRequest" name="quoteRequest" rows="5" placeholder="Quote Request Description"></textarea>
-        <!-- <span class="captcha-container">
-          <span class="captcha">A1B2C3</span>
-          <input type="text" placeholder="Captcha" name="">
-        </span> -->
       </fieldset>
     </div>
     <div>
@@ -59,10 +125,9 @@
         >
     </div>
 
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>function onSubmit(token) {document.getElementById("contactForm").submit();}</script>
 
-    
+
+
   </form>
 '
 ?>
