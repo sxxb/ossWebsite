@@ -25,26 +25,7 @@ $(function(){
        $(`body`).css({'overflow': 'auto'});
        }
      });
-    $("#searchField").on("keyup", function() {
-       var searchTerm = $(this).val().toLowerCase();
-       $("#searchList li").filter(function() {
-         $(this).toggle($(this).text().toLowerCase().indexOf(searchTerm) > -1)
-       });
-     });
-    $("#searchField").focusout(function() {
-      if ($("#searchField").parent().contents().not(':focus')) {
 
-    }
-    else {
-      $("#searchList li").hide();
-    }
-  });
-    $("#searchField").focusin(function() {
-      var searchTerm = $(this).val().toLowerCase();
-      if (searchTerm != '') {
-      $("#searchList li").filter(function() {
-        $(this).toggle($(this).text().toLowerCase().indexOf(searchTerm) > -1)
-      });
-    }
-   });
+// use Jquery Autocomplete for search functionality
+
   });
