@@ -123,30 +123,31 @@ if ($_POST) {
               'From: ' . $email_from . "\r\n" .
               'Reply-To: ' . $contactEmail;
 
-  // $secretKey = "6LcDGGodAAAAAAn1yEZKDMkKn2kUoZZMRTyln0nr";
-  // $responseKey = $_POST['g-recaptcha-response'];
-  // $UserIP = $_SERVER['REMOTE_ADDR'];
-  // $url = "https://www.google.com/recaptcha/api/siteverify?
-  // secret=$secretKey&response=$responseKey&remoteIP=$UserIP";
+  $secretKey = "6LcDGGodAAAAAAn1yEZKDMkKn2kUoZZMRTyln0nr";
+  $responseKey = $_POST['g-recaptcha-response'];
+  $UserIP = $_SERVER['REMOTE_ADDR'];
+  $url = "https://www.google.com/recaptcha/api/siteverify?
+  secret=$secretKey&response=$responseKey&remoteIP=$UserIP";
 
-  // $response = file_get_contents($url);
-  // $response = json_decode($response);
+  $response = file_get_contents($url);
+  $response = json_decode($response);
 
-  // if ($response->success)
-  // {
+  if ($response->success)
+  {
     mail($email_to, $email_subject, $email_body, $headers);
     echo "
       <div class='quote-form-notice quote-form-notice-good'>
         Quote Request Sent Successfully
       </div>
       ";
-  // }
-  // else {
-  //   echo "
-  //    <div class='quote-form-notice quote-form-notice-bad'>
-  //      Oops, please try again";
-  //     </div>
-  // }
+  }
+  else {
+    echo "
+     <div class='quote-form-notice quote-form-notice-bad'>
+       Oops, something went wrong - please try again;
+      </div>
+      ";
+  }
 };
 
 
