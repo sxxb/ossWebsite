@@ -133,7 +133,7 @@
              With our experience and know-how you can rest easy knowing that you've done your bit to keep your workplace safe. To get a quote for your workplace click below:</p>
         </div>
         <div class="why-tnt-button">
-          <a href="#index-quote">Get a Quote</a>
+          <a href="#GetAQuote">Get a Quote</a>
         </div>
       </div>
       <div class="main-section clients">
@@ -160,7 +160,7 @@
           <p>We know the importance of safety and security when we enter your workplace. All our technicians hold full police clearances and can carry out risk assessments, job safety analyses and site inductions on site as needed. At OSS Electrical we are dedicated to ensuring all our work is completed professionally and to the high standards our customers expect.</p>
         </div>
       </div>
-      <div class="main-section quote">
+      <div class="main-section quote" id="GetAQuote">
         <?php include ('partials/contact.php'); ?>
       </div>
       <div class="main-section other"></div>
