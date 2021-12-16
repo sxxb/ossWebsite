@@ -9,7 +9,7 @@ $theme-colour-1: hsl(144, 45%, 97%);
 $theme-colour-2: hsl(144, 27%, 91%);
 $theme-colour-3: hsl(144, 60%, 85%);
 $theme-colour-4: hsl(144, 45%, 81%);
-$theme-colour-5: hsl(144, 45%, 68%);;
+$theme-colour-5: hsl(144, 45%, 68%);
 $theme-colour-6: hsl(144, 35%, 45%);
 $theme-colour-7: hsl(144, 25%, 35%);
 $theme-colour-8: hsl(144, 14%, 13%);
@@ -770,6 +770,23 @@ main {
             }
           }
         }
+      }
+      .quote-form-notice {
+        text-align: center;
+        margin: 4rem auto;
+        padding: 2rem;
+        width: 32rem;
+        color: white;
+        box-shadow: $theme-shadow-1;
+        text-shadow: $theme-shadow-1;
+        font-weight:bold;
+        font-size:1.2rem;
+      }
+      .quote-form-notice-good {
+        background: $theme-colour-main-2;
+      }
+      .quote-form-notice-bad {
+        background: #e14545;
       }
     }
   }

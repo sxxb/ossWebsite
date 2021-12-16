@@ -754,6 +754,23 @@ main .quote .quote-form form div input[type=submit] {
 main .quote .quote-form form div input[type=submit]:hover {
   background: #40bf73;
 }
+main .quote .quote-form .quote-form-notice {
+  text-align: center;
+  margin: 4rem auto;
+  padding: 2rem;
+  width: 32rem;
+  color: white;
+  box-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  text-shadow: 0 5px 5px rgba(33, 33, 33, 0.13);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+main .quote .quote-form .quote-form-notice-good {
+  background: #40bf73;
+}
+main .quote .quote-form .quote-form-notice-bad {
+  background: #e14545;
+}
 main .services,
 main .why-tnt,
 main .clients,
