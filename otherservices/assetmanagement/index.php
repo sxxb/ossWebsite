@@ -11,7 +11,7 @@
     <main>
         <div class="main-section hero">
           <div class="hero-image" id="AssetManagementHero">
-            <h2>Asset Managetment</h2>
+            <h2>Asset Management</h2>
           </div>
           <div class="hero-text">
             <p>
