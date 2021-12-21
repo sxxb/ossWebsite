@@ -1352,7 +1352,6 @@ header .header-nav .header-nav-main-links > li ul:hover {
 main .quote .quote-form form div fieldset select,
 main .quote .quote-form form div fieldset textarea,
 main .quote .quote-form form div fieldset > span {
-    margin: 0 0 1rem 0;
     width: 100%;
   }
   main .quote .quote-form form div fieldset input,
