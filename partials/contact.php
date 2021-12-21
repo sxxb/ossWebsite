@@ -49,6 +49,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
 
+  function parse_select($data) {
+    if (isset($data)) {
+      $data = filter_var($data, FILTER_SANITIZE_STRING);
+      $data = htmlspecialchars($data);
+      return $data;
+    }
+  }
+
   if (empty($contactName)) {
     $contactNameError = "Required";};
   if (empty($contactBusinessName)) {
@@ -57,9 +65,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       $contactAddressError = "Required";};
   if (empty($contactPhone)) {
       $contactPhoneError = "Required";};
-  if (empty($contactHearAbout)) {
+  if (!isset($contactHearAbout)) {
       $contactHearAboutError = "Required";};
-  if (empty($contactEnquiryType)) {
+  if (!isset($contactEnquiryType)) {
       $contactEnquiryTypeError = "Required";};
   if (empty($contactQuoteRequest)) {
       $contactQuoteRequestError = "Required";};
@@ -68,14 +76,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   if (!filter_var($contactEmail, FILTER_VALIDATE_EMAIL)) {
       $contactEmailError = "Invalid Email Format";};
 
-  if (!empty($contactBusinessName) and !empty($contactAddress) and !empty($contactPhone) and !empty($contactHearAbout) and !empty($contactEnquiryType) and !empty($contactQuoteRequest) and !empty($contactEmail)) {
+  if (!empty($contactBusinessName) and !empty($contactAddress) and !empty($contactPhone) and isset($contactHearAbout) and isset($contactEnquiryType) and !empty($contactQuoteRequest) and !empty($contactEmail) and filter_var($contactEmail, FILTER_VALIDATE_EMAIL)) {
     $contactName = parse_input($_POST["contactName"]);
     $contactBusinessName = parse_input($_POST["contactBusinessName"]);
     $contactAddress = parse_input($_POST["contactAddress"]);
     $contactPhone = parse_input($_POST["contactPhone"]);
-    $contactHearAbout = parse_input($_POST["contactHearAbout"]);
-    echo 'in the middle';
-    $contactEnquiryType = parse_input($_POST["contactEnquiryType"]);
+    $contactHearAbout = parse_select($_POST["contactHearAbout"]);
+    $contactEnquiryType = parse_select($_POST["contactEnquiryType"]);
     $contactQuoteRequest = parse_input($_POST["contactQuoteRequest"]);
     $contactEmail = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['contactEmail']);
 
@@ -133,7 +140,7 @@ else {
 ?>
 
 <div class="quote-title">
- <h2>Get a Quote</h2>
+ <h2>Get a Quote - 2</h2>
 </div>
 <div class="quote-form">
  <form id="contactForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
