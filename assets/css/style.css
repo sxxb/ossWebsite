@@ -692,6 +692,13 @@ main .quote .quote-form form div fieldset > span {
   margin: 0 0 1rem 0;
   width: 100%;
 }
+main .quote .quote-form form div fieldset span.error {
+  margin: 0;
+  font-size: 0.75rem;
+  color: #ea0029;
+  padding-left: 0.75rem;
+  font-style: italic;
+}
 main .quote .quote-form form div fieldset input,
 main .quote .quote-form form div fieldset select,
 main .quote .quote-form form div fieldset textarea {
