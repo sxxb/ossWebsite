@@ -707,6 +707,13 @@ main {
               margin: 0 0 1rem 0;
               width: 100%;
             }
+            span.error {
+              margin: 0;
+              font-size: 0.75rem;
+              color: #ea0029;
+              padding-left: 0.75rem;
+              font-style: italic;
+            }
             input,
             select,
             textarea {
