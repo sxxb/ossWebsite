@@ -74,6 +74,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $contactAddress = parse_input($_POST["contactAddress"]);
     $contactPhone = parse_input($_POST["contactPhone"]);
     $contactHearAbout = parse_input($_POST["contactHearAbout"]);
+    echo 'in the middle';
     $contactEnquiryType = parse_input($_POST["contactEnquiryType"]);
     $contactQuoteRequest = parse_input($_POST["contactQuoteRequest"]);
     $contactEmail = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['contactEmail']);
