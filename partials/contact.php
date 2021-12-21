@@ -140,7 +140,7 @@ else {
 ?>
 
 <div class="quote-title">
- <h2>Get a Quote - 2</h2>
+ <h2>Get a Quote</h2>
 </div>
 <div class="quote-form">
  <form id="contactForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">

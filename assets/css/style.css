@@ -684,6 +684,7 @@ main .quote .quote-form form div fieldset {
   justify-content: space-evenly;
   width: 100%;
   max-width: 30rem;
+  margin-bottom: 1rem;
 }
 main .quote .quote-form form div fieldset > input,
 main .quote .quote-form form div fieldset select,
