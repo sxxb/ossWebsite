@@ -1424,7 +1424,8 @@ footer {
     }
     .quote {
       .quote-title {
-        margin: 2rem auto;
+        margin: 0 auto;
+        padding:2rem 0;
       }
       .quote-form {
         width: 90%;
@@ -1438,7 +1439,7 @@ footer {
               display: flex;
               flex-direction: column;
               align-items: center;
-              justify-content: start;
+              justify-content: space-evenly;
               max-width: unset;
               &:first-of-type {
                 margin-right: 1rem;

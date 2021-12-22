@@ -1325,7 +1325,8 @@ header .header-nav .header-nav-main-links > li ul:hover {
     font-size: 1.15rem;
   }
   main .quote .quote-title {
-    margin: 2rem auto;
+    margin: 0 auto;
+    padding: 2rem 0;
   }
   main .quote .quote-form {
     width: 90%;
@@ -1340,7 +1341,7 @@ header .header-nav .header-nav-main-links > li ul:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: space-evenly;
     max-width: unset;
   }
   main .quote .quote-form form div fieldset:first-of-type {

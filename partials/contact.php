@@ -10,7 +10,7 @@ $contactHearAbout = "";
 $contactEnquiryType = "";
 $contactQuoteRequest = "";
 
-$contactNameError = $contactBusinessNameError = $contactAddressError = $contactPhoneError = $contactEmailError = $contactQuoteRequestError = $contactHearAboutError = $contactEnquiryTypeError = "";
+$contactNameError = $contactBusinessNameError = $contactAddressError = $contactPhoneError = $contactEmailError = $contactQuoteRequestError = $contactHearAboutError = $contactEnquiryTypeError = $contactFormMsg = $contactFormSent = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -23,17 +23,61 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
   if ($response->success) {
 
-  $contactDate = date("h:i A, d/m/Y");
+    $contactDate = date("h:i A, d/m/Y");
 
-  $contactName = $_POST["contactName"];
-  $contactBusinessName = $_POST["contactBusinessName"];
-  $contactAddress = $_POST["contactAddress"];
-  $contactPhone = $_POST["contactPhone"];
-  $contactHearAbout = $_POST["contactHearAbout"];
-  $contactEnquiryType = $_POST["contactEnquiryType"];
-  $contactQuoteRequest = $_POST["contactQuoteRequest"];
+    if (empty($_POST["contactName"])) {
+      $contactNameError = "Required";}
+    else {
+        $contactName = $_POST["contactName"];
+      };
 
-  $contactEmail = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['contactEmail']);
+    if (empty($_POST["contactBusinessName"])) {
+        $contactBusinessNameError = "Required";}
+    else {
+        $contactBusinessName = $_POST["contactBusinessName"];
+        };
+
+    if (empty($_POST["contactAddress"])) {
+        $contactAddressError = "Required";}
+    else {
+        $contactAddress = $_POST["contactAddress"];
+        };
+
+    if (empty($_POST["contactPhone"])) {
+        $contactPhoneError = "Required";}
+    else {
+        $contactPhone = $_POST["contactPhone"];
+        };
+
+    if (!isset($_POST["contactHearAbout"])) {
+        $contactHearAboutError = "Required";
+        $contactHearAbout = "";
+      }
+    elseif (isset($_POST["contactHearAbout"])) {
+        $contactHearAbout = $_POST["contactHearAbout"];
+      };
+
+    if (!isset($_POST["contactEnquiryType"])) {
+        $contactEnquiryTypeError = "Required";
+        $contactEnquiryType = "";
+      }
+    elseif (isset($_POST["contactEnquiryType"])) {
+        $contactEnquiryType = $_POST["contactEnquiryType"];
+      };
+
+    if (empty($_POST["contactQuoteRequest"])) {
+        $contactQuoteRequestError = "Required";}
+    else {
+        $contactQuoteRequest = $_POST["contactQuoteRequest"];
+        };
+
+    if (empty($_POST['contactEmail'])) {
+        $contactEmailError = "Required";}
+    elseif (!filter_var($_POST['contactEmail'], FILTER_VALIDATE_EMAIL)) {
+        $contactEmailError = "Invalid Email Format";}
+    else {
+        $contactEmail = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['contactEmail']);
+        };
 
   function parse_input($data) {
     if (!empty($data)) {
@@ -57,25 +101,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
   }
 
-  if (empty($contactName)) {
-    $contactNameError = "Required";};
-  if (empty($contactBusinessName)) {
-      $contactBusinessNameError = "Required";};
-  if (empty($contactAddress)) {
-      $contactAddressError = "Required";};
-  if (empty($contactPhone)) {
-      $contactPhoneError = "Required";};
-  if (!isset($contactHearAbout)) {
-      $contactHearAboutError = "Required";};
-  if (!isset($contactEnquiryType)) {
-      $contactEnquiryTypeError = "Required";};
-  if (empty($contactQuoteRequest)) {
-      $contactQuoteRequestError = "Required";};
-  if (empty($contactEmail)) {
-      $contactEmailError = "Required";};
-  if (!filter_var($contactEmail, FILTER_VALIDATE_EMAIL)) {
-      $contactEmailError = "Invalid Email Format";};
-
   if (!empty($contactBusinessName) and !empty($contactAddress) and !empty($contactPhone) and isset($contactHearAbout) and isset($contactEnquiryType) and !empty($contactQuoteRequest) and !empty($contactEmail) and filter_var($contactEmail, FILTER_VALIDATE_EMAIL)) {
     $contactName = parse_input($_POST["contactName"]);
     $contactBusinessName = parse_input($_POST["contactBusinessName"]);
@@ -90,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email_subject = "Quote Request - $contactBusinessName";
     $email_body = "<div><em style='font-size:0.8em'>Quote requested at $contactDate</em></div>\n".
                   "<div><strong>Contact Name:</strong> $contactName </div>\n".
-                  "<div><strong>Business:</strong> $contactBusinessName </div>\n";
+                  "<div><strong>Business:</strong> $contactBusinessName </div>\n".
                   "<div><strong>Address:</strong> $contactAddress </div>\n".
                   "<div><strong>Phone:</strong> $contactPhone </div>\n".
                   "<div><strong>Email:</strong> $contactEmail </div>\n".
@@ -100,38 +125,36 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   "<div>$contactQuoteRequest </div>\n".
                   "<br/>\n".
                   "<div><strong>This person heard about OSS from:</strong> $contactHearAbout </div>\n";
-    $email_to = "graphics@wavecom.com.au";
-    //TODO
+    $email_to = "graphics@wavecom.com.au";   //TODO
     $headers  = 'MIME-Version: 1.0' . "\r\n".
                 'Content-type: text/html; charset=utf-8' . "\r\n".
                 'From: ' . $email_from . "\r\n" .
                 'Reply-To: ' . $contactEmail;
 
-
-    {
-      // mail($email_to, $email_subject, $email_body, $headers); // TODO:
-      echo "$email_to, $email_subject, $email_body, $headers"; // TODO
-      echo "
-        <div class='quote-form-notice quote-form-notice-good'>
-          Quote Request Sent Successfully
-        </div>
-        ";
-    }
+      mail($email_to, $email_subject, $email_body, $headers);
+      $contactFormSent = TRUE;
+      $contactFormMsg = "
+      <div class='quote-form-notice quote-form-notice-good'>
+        Quote Request Sent Successfully
+      </div>
+      ";
   }
   else {
-    echo "
+    $contactFormMsg = "
      <div class='quote-form-notice quote-form-notice-bad'>
        Oops, you forgot something - please try again
       </div>
       ";
+    $contactFormSent = FALSE;
   }
 }
 else {
-  echo "
+  $contactFormMsg = "
    <div class='quote-form-notice quote-form-notice-bad'>
      Oops, something went wrong - please try again
     </div>
     ";
+    $contactFormSent = FALSE;
 }
 
 };
@@ -139,21 +162,21 @@ else {
 
 ?>
 
-<div class="quote-title">
+<div class="quote-title" id="quoteTop">
  <h2>Get a Quote</h2>
 </div>
 <div class="quote-form">
- <form id="contactForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+ <form id="contactForm" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>/#quoteTop" method="POST">
    <div>
      <fieldset>
-       <input type="text" id="quoteFormName" placeholder="Name" aria-label="Name" name="contactName" required></input><span class="error"><?php echo $contactNameError;?></span>
-       <input type="text" id="quoteFormBusinessName" placeholder="Business Name" aria-label="Business Name" name="contactBusinessName"><span class="error"><?php echo $contactBusinessNameError;?></span>
-       <input type="text" id="quoteFormAddress" placeholder="Address" aria-label="Address" name="contactAddress" required><span class="error"><?php echo $contactAddressError;?></span>
-       <input type="tel"  id="quoteFormPhone" placeholder="Phone" aria-label="Phone" name="contactPhone" required><span class="error"><?php echo $contactPhoneError;?></span>
-       <input type="email"  id="quoteFormEmail" placeholder="Email" aria-label="Email" name="contactEmail" required><span class="error"><?php echo $contactEmailError;?>
+       <input type="text" id="quoteFormName" placeholder="Name" aria-label="Name" name="contactName" value="<?php echo $contactFormSent ? '' : $contactName ?>" required></input><span class="error"><?php echo $contactNameError;?></span>
+       <input type="text" id="quoteFormBusinessName" placeholder="Business Name" aria-label="Business Name" name="contactBusinessName" value="<?php echo $contactFormSent ? '' : $contactBusinessName ?>" required><span class="error"><?php echo $contactBusinessNameError;?></span>
+       <input type="text" id="quoteFormAddress" placeholder="Address" aria-label="Address" name="contactAddress" value="<?php echo $contactFormSent ? '' : $contactAddress ?>" required><span class="error"><?php echo $contactAddressError;?></span>
+       <input type="tel"  id="quoteFormPhone" placeholder="Phone" aria-label="Phone" name="contactPhone" value="<?php echo $contactFormSent ? '' : $contactPhone ?>" required><span class="error"><?php echo $contactPhoneError;?></span>
+       <input type="email"  id="quoteFormEmail" placeholder="Email" aria-label="Email" name="contactEmail" value="<?php echo $contactFormSent ? '' : $contactEmail ?>" required><span class="error"><?php echo $contactEmailError;?>
      </fieldset></span>
      <fieldset>
-       <select id="quoteFormHearAbout" aria-label="How did you hear about OSS?" name="contactHearAbout" required><span class="error"><?php echo $contactHearAboutError;?></span>
+       <select id="quoteFormHearAbout" aria-label="How did you hear about OSS?" name="contactHearAbout" required>
          <option value="" class="option-placeholder" disabled selected>How did you hear about OSS?</option>
          <option value="Business Contact">Business Contact</option>
          <option value="Google Search">Google Search</option>
@@ -168,7 +191,8 @@ else {
          <option value="Brochure">Brochure</option>
          <option value="Others">Others</option>
        </select>
-       <select id="quoteFormEnquiryType" aria-label="What type of service do you require?" name="contactEnquiryType" required><span class="error"><?php echo $contactEnquiryTypeError;?></span>
+       <span class="error"><?php echo $contactHearAboutError;?></span>
+       <select id="quoteFormEnquiryType" aria-label="What type of service do you require?" name="contactEnquiryType" required>
          <option value="" class="option-placeholder" disabled selected>Service Required</option>
          <option value="Service Visit">Service Visit</option>
          <option value="Appliance Testing">Appliance Testing</option>
@@ -180,7 +204,8 @@ else {
          <option value="Solar Panel Installations">Solar Panel Installations</option>
          <option value="Others">Others</option>
        </select>
-       <textarea id="quoteFormQuoteRequest" aria-label="What is this quote request regarding?" name="contactQuoteRequest" rows="5" placeholder="Quote Request Description"></textarea><span class="error"><?php echo $contactQuoteRequestError;?>
+       <span class="error"><?php echo $contactEnquiryTypeError;?></span>
+       <textarea id="quoteFormQuoteRequest" aria-label="What is this quote request regarding?" name="contactQuoteRequest" value="<?php echo $contactFormSent ? '' : $contactQuoteRequest ?>" rows="5" placeholder="Quote Request Description"></textarea><span class="error"><?php echo $contactQuoteRequestError;?>
      </fieldset>
    </div>
    <div>
@@ -195,3 +220,5 @@ else {
        >
    </div>
  </form>
+ <?php echo $contactFormMsg ?>
+</div>
