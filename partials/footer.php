@@ -52,7 +52,9 @@
     </div>
   </div>
   <div class="footer-copyright">
-    <h6>OSS Electrical &copy;2021</h6>
+    <h6>OSS Electrical &copy;';
+    echo date("Y");
+    echo '</h6>
   </div>
 '
 ?>
