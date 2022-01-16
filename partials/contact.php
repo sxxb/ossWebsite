@@ -205,7 +205,7 @@ else {
          <option value="Others">Others</option>
        </select>
        <span class="error"><?php echo $contactEnquiryTypeError;?></span>
-       <textarea id="quoteFormQuoteRequest" aria-label="What is this quote request regarding?" name="contactQuoteRequest" value="<?php echo $contactFormSent ? '' : $contactQuoteRequest ?>" rows="5" placeholder="Quote Request Description"></textarea><span class="error"><?php echo $contactQuoteRequestError;?>
+       <textarea id="quoteFormQuoteRequest" aria-label="What is this quote request regarding?" name="contactQuoteRequest" rows="5" placeholder="Quote Request Description"><?php echo $contactFormSent ? '' : $contactQuoteRequest ?></textarea><span class="error"><?php echo $contactQuoteRequestError;?>
      </fieldset>
    </div>
    <div>
